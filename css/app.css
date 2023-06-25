@@ -43,6 +43,7 @@
 }
 body {
     font-family: var(--ff-primary);
+    color: var(--dark);
 }
 
 a,a:hover{
