@@ -1,0 +1,28 @@
+.navbar-nav .dropdown-menu{
+    --bs-dropdown-min-width: 200px;
+    left: auto;
+    right: 0;
+    border: none;
+    padding: 0;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+}
+@media (width >=768px){
+    .navbar-nav .dropdown-menu{
+        box-shadow: 0 6px 12px #00000033;
+    }
+}
+.navbar-nav .dropdown-menu .dropdown-item{
+    padding: 10px 20px;
+}
+.navbar-nav .nav-link:hover,.navbar-nav .nav-item.active>a,.navbar-nav .dropdown-menu .dropdown-item:hover{
+    color: var(--primary);
+}
+.dropdown-menu  .nav-item.active .dropdown-item{
+    background: var(--primary);
+    color: white;
+}
+
+.sub-menu{
+    
+}
