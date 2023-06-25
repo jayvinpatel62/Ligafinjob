@@ -757,3 +757,43 @@ a,a:hover{
     /* z-index: -1; */
 }
 /*------------------------ innter page close -------------------------------*/
+.viewprofile_div{
+    text-align: center;
+}
+.viewprofile_pic{
+    display: inline-block;
+    --viewProfile_size:170px;
+    width: var(--viewProfile_size);
+    height:  var(--viewProfile_size);
+    border-radius: var(--viewProfile_size);
+    overflow: hidden;
+}
+.viewOpening_List{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.viewOpening_List .item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--fs-clamp-16);
+    border-top: 1px solid var(--dark);
+    color: var(--dark);
+    padding: 20px 30px;
+    font-weight: bold;
+}
+.viewOpening_List .item:last-child{
+    border-bottom: 1px solid var(--dark);
+}
+.form-label{
+    font-weight: bold;
+    font-size: var(--fs-clamp-18);
+}
+.form-control,.form-select{
+    font-size: var(--fs-clamp-14);
+    padding: 12px 20px;
+}
+.form-control::placeholder{
+    color: var(--muted);
+}
