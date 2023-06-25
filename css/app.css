@@ -40,20 +40,6 @@
     --fs-clamp-60: clamp(1.875rem, 1.6071rem + 1.3393vw, 3.75rem);
     --fs-clamp-64: clamp(2.125rem, 1.8571rem + 1.3393vw, 4rem);
 
-    --min-xs:479px;
-    --max-xs:480px;
-
-    --min-sm:639px;
-    --max-sm:640px;
-
-    --min-md:767px;
-    --max-md:768px;
-
-    --min-lg:991px;
-    --max-lg:992px;
-
-    --min-xl:1199px;
-    --max-xl:1200px;
 
 }
 body {
