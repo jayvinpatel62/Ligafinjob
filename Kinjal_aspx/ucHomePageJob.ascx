@@ -10,16 +10,16 @@
 		//rutvi added
                 <ul  class="nav nav-tabs nav-home-tab">
                     <%--<div>--%>
-                    <li id="liAll" runat="server">
-                        <a href="" id="lnkAll" onserverclick="btncategory_click" data-member="0" class="tab-item nav-link active" enableviewstate="false" causesvalidation="false" data-member="0"
+                    <li class="tab-item active" id="liAll" runat="server">
+                        <a href="" id="lnkAll" onserverclick="btncategory_click" data-member="0" class="nav-link" enableviewstate="false" causesvalidation="false" data-member="0"
                             ><span>All</span></a>
                        
                     </li>
                     <asp:Repeater ID="rptCategory" runat="server" OnItemDataBound="rptcategory_databound"
                         OnItemCommand="rptcategory_itemcommand" DataMember="JobCategoryID">
                         <ItemTemplate>
-                            <li runat="server" id="licategory">
-                                <a href="" runat="server" id="lnkcategory" enableviewstate="false" causesvalidation="false" class="tab-item nav-link">
+                            <li  class="tab-item" runat="server" id="licategory">
+                                <a href="" runat="server" id="lnkcategory" enableviewstate="false" causesvalidation="false" class="nav-link">
                                     <span>
                                         <%#DataBinder.Eval(Container.DataItem, "CategoryCode").ToString()%></span></a>
                             </li>
