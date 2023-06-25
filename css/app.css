@@ -40,6 +40,21 @@
     --fs-clamp-60: clamp(1.875rem, 1.6071rem + 1.3393vw, 3.75rem);
     --fs-clamp-64: clamp(2.125rem, 1.8571rem + 1.3393vw, 4rem);
 
+    --min-xs:479px;
+    --max-xs:480px;
+
+    --min-sm:639px;
+    --max-sm:640px;
+
+    --min-md:767px;
+    --max-md:768px;
+
+    --min-lg:991px;
+    --max-lg:992px;
+
+    --min-xl:1199px;
+    --max-xl:1200px;
+
 }
 body {
     font-family: var(--ff-primary);
@@ -666,6 +681,7 @@ a,a:hover{
 
 .header-inner{
     background: var(--black);
+    /* background: linear-gradient(270deg, rgba(0, 0, 0, 0.80) 7.29%, rgba(49, 49, 49, 0.48) 56.97%, rgba(0, 0, 0, 0.27) 69.60%, rgba(71, 71, 71, 0.02) 77.67%, rgba(171, 171, 171, 0.00) 86.46%, rgba(169, 169, 169, 0.00) 97.40%); */
     color: var(--white);
     height: 371px;
     display: flex;
@@ -733,6 +749,8 @@ a,a:hover{
     background: var(--light-gray);
     padding:30px 20px;
     border-radius: 30px;
+    position: relative;
+    z-index: 1;
 }
 .ribbon_title{
     --ribbon-offset:36px;
@@ -750,12 +768,11 @@ a,a:hover{
     width: 0;
     height: 0;
     left: 3px;
-    top:  calc(var(--ribbon-offset) + 2px);
+    top: calc(var(--ribbon-offset) + 2px);
     border-top: 0px solid transparent;
-    border-right: 20px solid var(--orange-dark);
-    border-bottom: 20px solid transparent;
+    border-right: 14px solid var(--orange-dark);
+    border-bottom: 14px solid transparent;
     z-index: -1;
-    /* z-index: -1; */
 }
 /*------------------------ innter page close -------------------------------*/
 .viewprofile_div{

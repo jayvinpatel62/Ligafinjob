@@ -1,3 +1,7 @@
+/*---- 
+">=" min-width, 
+"<=" max-width
+ -----*/
 @media (width <= 480px){
   .job-item {
     padding: 10px;
