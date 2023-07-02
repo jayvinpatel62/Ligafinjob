@@ -588,6 +588,7 @@ a,a:hover{
     padding: 20px;
     font-size: var(--fs-clamp-14);
     border-radius:10px;
+    min-height: 180px;
     
 }
 .testimonial_item .content p{
