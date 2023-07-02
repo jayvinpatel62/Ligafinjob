@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,
+            user-scalable=0" name="viewport" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="favicon_io/android-chrome-512x512.png"> 
+        <link rel="icon" type="image/png" sizes="192x192" href="favicon_io/android-chrome-192x192.png"> 
+        <link rel="manifest" href="favicon_io/site.webmanifest">
+
+        <title>POST A OPENING</title>
+
+        <script src="js/jquery.min.js"></script>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/Responsive.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+
+        <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+        <!--------- menu start-->
+        <link rel="stylesheet" type="text/css" href="css/nav-menu.css" />
+        <script src="js/script_nav_menu.js"></script>
+
+        <!--------- Date picker start-->
+        
+        <script src="https://unpkg.com/gijgo@1.9.14/js/gijgo.min.js" type="text/javascript"></script>
+        <link href="https://unpkg.com/gijgo@1.9.14/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+       
+        <!--------- Date picker end-->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+    </head>
+    <body>
+            <!----------------------------  main-menu start ---------------------------->
+            <nav class="nav-main navbar navbar-expand-lg bg-body-light">
+                <div class="container-fluid px-md-5">
+                <a class="navbar-brand logo" href="#">
+                    <img src="images/logo.png" alt="logo.png" class="img-fluid">
+                </a>
+                
+                <div class="right-content order-lg-last">
+                    <div class="right-login  d-flex gap-3">
+                        <a href="#" class="userloginregister">
+                            <i class="bi bi-person-circle"></i>
+                        </a>
+                        <a href="javascript://" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="bi bi-list"></i>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <div class="collapse pe-2 ms-auto navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 " id="navMenus">
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Candidate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Employer</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown children">
+                        <a class="nav-link toggle-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        More
+                        </a>
+                        <ul class="dropdown-menu sub-menu">
+                            <li class="nav-item"><a class="dropdown-item" href="#">Sub menu item 1</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="#">Sub menu item 2</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="#">Sub menu item 3</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="#">Sub menu item 4</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="#">Sub menu item 5</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                </div>
+                
+                </div>
+            </nav>
+            <!---------------------------- main-menu close ---------------------------->
+
+            <!---------------------------- Header Inner start---------------------------->
+            <header class="header-inner">
+                <div class="p-5 text-center">
+                    <div class="title-64 bold uppr">POST A OPENING</div>
+                    <div class="subtext fs-32">We Support Your Ideas While You Build Great Things</div>
+                </div>
+            </header>
+            <!---------------------------- Header Inner close ---------------------------->
+
+            <!---------------------------- offset_wrapper ---------------------------->
+            <section class="p-4">
+               <div class="container">
+                <div class="mb-3">
+                    <label for="opening" class="form-label label-strip">View Previous Openings Posted</label>
+                    <select class="form-select" aria-label="opening">
+                        <option selected>Select Previous Posted Opening </option>
+                        <option value="1">Posted Opening One</option>
+                        <option value="2">Posted Opening Two</option>
+                        <option value="3">Posted Opening Three</option>
+                    </select>
+                </div>
+                <div class="white_box_shadow border-gray border-radius-10 py-5 px-md-5 px-4">
+                    <div class="row row-cols-md-2 row-cols-lg-3 row-cols-1">
+                        <div class="col col-md-12 col-lg-8">
+                            <div class="mb-3">
+                                <label for="JobTitle" class="form-label">Job Title<span class="required">*</span></label>
+                                <input type="text" class="form-control" id="JobTitle" placeholder="Job Title">
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="Category" class="form-label">Category of Opening</label>
+                                <select class="form-select" aria-label="Category">
+                                    <option selected>Select Category </option>
+                                    <option value="1">Category One</option>
+                                    <option value="2">Category Two</option>
+                                    <option value="3">Category Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="NumberofOpenings " class="form-label">Number of Openings<span class="required">*</span></label>
+                                <input type="number" class="form-control" id="NumberofOpenings" placeholder="Number of Openings">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="MinimumExperience" class="form-label">Minimum Experience Required<span class="required">*</span></label>
+                                <input type="number" class="form-control" id="MinimumExperience" placeholder="Years of Experience ">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="OfferedSalaryUpto" class="form-label">Offered Salary Upto<span class="required">*</span></label>
+                                <input type="number" class="form-control" id="OfferedSalaryUpto" placeholder="Maximum Salary Offered (in Lacs)">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="CompanyDept" class="form-label">Company/ Dept. Name<span class="required">*</span></label>
+                                <input type="text" class="form-control" id="CompanyDept" placeholder="Company/ Dept. Name">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="City" class="form-label">Loaction</label>
+                                <input type="text" class="form-control" id="City" placeholder="Enter City Name">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="SubLocation" class="form-label">Sub-Location<span class="required">*</span></label>
+                                <input type="text" class="form-control" id="SubLocation" placeholder="Pincode">
+                            </div>
+                        </div>
+                        <div class="col col-md-12 col-lg-12">
+                            <div class="mb-3">
+                                <label for="KeySkills" class="form-label">Key Skills<span class="required">*</span></label>
+                                <div class="white-box-border border-radius-10 p-3">
+                                    <div class="grid_checkbox">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Accounts">
+                                            <label class="form-check-label" for="Accounts">
+                                                Accounts
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Advisory">
+                                            <label class="form-check-label" for="Advisory">
+                                                Advisory
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Analyst">
+                                            <label class="form-check-label" for="Analyst">
+                                                Analyst
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Audit Tax Mix">
+                                            <label class="form-check-label" for="Audit Tax Mix">
+                                                Audit Tax Mix
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="BankAudit">
+                                            <label class="form-check-label" for="BankAudit">
+                                                Bank Audit
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Banking">
+                                            <label class="form-check-label" for="Banking">
+                                                Banking
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="CompanyLaw">
+                                            <label class="form-check-label" for="CompanyLaw">
+                                                Company Law
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="CorporateFinance">
+                                            <label class="form-check-label" for="CorporateFinance">
+                                                Corporate Finance
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Credit">
+                                            <label class="form-check-label" for="Credit">
+                                                Credit
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="DirectTax">
+                                            <label class="form-check-label" for="DirectTax">
+                                                Direct Tax
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="DueDiligence">
+                                            <label class="form-check-label" for="DueDiligence">
+                                                Due Diligence
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Education">
+                                            <label class="form-check-label" for="Education">
+                                                Education
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="EquityResearch">
+                                            <label class="form-check-label" for="EquityResearch">
+                                                Equity Research
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="FEMA">
+                                            <label class="form-check-label" for="FEMA">
+                                                FEMA
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Finance">
+                                            <label class="form-check-label" for="Finance">
+                                                Finance
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="FP&A">
+                                            <label class="form-check-label" for="FP&A">
+                                                FP&A
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="GST">
+                                            <label class="form-check-label" for="GST">
+                                                GST
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="HR">
+                                            <label class="form-check-label" for="HR">
+                                                HR
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Insurance">
+                                            <label class="form-check-label" for="Insurance">
+                                                Insurance
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="InternalAudit">
+                                            <label class="form-check-label" for="InternalAudit">
+                                                Internal Audit
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="InternationalTax">
+                                            <label class="form-check-label" for="InternationalTax">
+                                                International Tax
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="InvtBanking">
+                                            <label class="form-check-label" for="InvtBanking">
+                                                Invt Banking
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Litigation">
+                                            <label class="form-check-label" for="Litigation">
+                                                Litigation
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="MarketingSalesorBD">
+                                            <label class="form-check-label" for="MarketingSalesorBD">
+                                                Marketing Sales or BD
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="MIS">
+                                            <label class="form-check-label" for="MIS">
+                                                MIS
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="SEBI">
+                                            <label class="form-check-label" for="SEBI">
+                                                SEBI
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="SpecialAudits">
+                                            <label class="form-check-label" for="SpecialAudits">
+                                                Special Audits
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="StatAudit">
+                                            <label class="form-check-label" for="StatAudit">
+                                                Stat Audit
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Treasury">
+                                            <label class="form-check-label" for="Treasury">
+                                                Treasury
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Valuation">
+                                            <label class="form-check-label" for="Valuation">
+                                                Valuation
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Others">
+                                            <label class="form-check-label" for="Others">
+                                                Others
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-12 col-lg-12">
+                            <div class="mb-3">
+                                <label for="OrganizationDescription" class="form-label">Organization Description<span class="required">*</span></label>
+                                <textarea id="OrganizationDescription" class="form-control" rows="6">Provide a comprehensive description of your organisation in between 60 and 150 words without mentioning its name. Include information such as the number of years the organisation has been in operation, the number and experience of partners (in the case of a practising firm), the size of the organization's overall staff or a specific team or department, the types of work the organisation handles, the types of clients, etc. Utilise this area as your organization's "branding section" to draw in a large number of qualified individuals.
+                                </textarea>
+                            </div>
+                        </div>
+                        <div class="col col-md-6 col-lg-6">
+                            <div class="mb-3">
+                                <label for="JobDescription" class="form-label">Job Description<span class="required">*</span></label>
+                                <textarea id="JobDescription" class="form-control" rows="6">Provide a thorough work description in between 60 and 200 words. You should outline the position's profile for the applicant as well as the precise nature of the task, including the roles and responsibilities. 
+                                </textarea>
+                            </div>
+                        </div>
+                        <div class="col col-md-6 col-lg-6">
+                            <div class="mb-3">
+                                <label for="DesiredCandidate" class="form-label">Desired Candidate<span class="required">*</span></label>
+                                <textarea id="DesiredCandidate" class="form-control" rows="6">Outline the prerequisites for candidates in 40 to 120 words. Provide required minimum qualification(s), experience, communication skills, languages knowledge, age and gender requirements, working hours needed, etc. If certain requirements are not mandatory, it may be provided as an added advantage. 
+                                </textarea>
+                            </div>
+                        </div>
+                        <div class="col col-md-8 col-lg-8">
+                            <div class="mb-3">
+                                <label for="Venue" class="form-label">Venue<span class="required">*</span></label>
+                                <select class="form-select" aria-label="Venue">
+                                    <option selected>Select Interview Venue </option>
+                                    <option value="1">Venue One</option>
+                                    <option value="2">Venue Two</option>
+                                    <option value="3">Venue Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="AllowWalkInInterview" class="form-label">Allow Walk In Interview<span class="required">*</span></label>
+                                <select class="form-select" aria-label="AllowWalkInInterview">
+                                    <option selected>Select From Option</option>
+                                    <option value="1">Option One</option>
+                                    <option value="2">Option Two</option>
+                                    <option value="3">Option Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3 customDatepicker">
+                                <label for="InterviewDate" class="form-label">Interview Date <a href="javascript://" class="link bold ms-2"><i class="bi bi-plus-circle"></i></a></label>
+                                <input type="text" class="form-control" id="InterviewDate" placeholder="Select Interview Date ">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3 customDatepicker">
+                                <label for="InterviewTime" class="form-label">Interview Time</label>
+                                <input type="text" class="form-control" id="InterviewTime" placeholder="Select Time Slots ">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col col-md-12 col-lg-12">
+                            <div class="btn btn-primary">Update</div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+            </section>
+            <!---------------------------- offset_wrapper close ---------------------------->
+
+            <!----------- adspace ---------->
+                <!-- please remove class "d-none" & after show ads -->
+                <div class="adspace d-none">Ad Here</div> 
+            <!--------- adspace close ---------->
+
+           <div class="spacer"></div>
+         
+            <footer class="footer-sec">
+                <div class="container">
+                    <div class="row g-3 row-cols-1 row-cols-md-2 row-cols-lg-4">
+                        <div class="col">
+                            <div class="footer_item">
+                                <div class="ft-title">
+                                    JOBS FOR CA
+                                </div>
+                                <div class="ft-links">
+                                <a href="#" class="link">Audit Jobs</a>
+                                <a href="#" class="link">Banking Jobs</a>
+                                <a href="#" class="link">Corporate Finance Jobs </a>
+                                <a href="#" class="link">Direct Tax Jobs</a>
+                                <a href="#" class="link">Due Diligence Jobs</a>
+                                <a href="#" class="link">GST Jobs</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="footer_item">
+                                <div class="ft-title">
+                                    JOBS FOR CS
+                                </div>
+                                <div class="ft-links">
+                                <a href="#" class="link">Advisory Jobs</a>
+                                <a href="#" class="link">Company Law Jobs </a>
+                                <a href="#" class="link">Due Diligence Jobs</a>
+                                <a href="#" class="link">FEMA Jobs</a>
+                                <a href="#" class="link">Litigation Jobs</a>
+                                <a href="#" class="link">Secretarial Jobs</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="footer_item">
+                                <div class="ft-title">
+                                    JOBS FOR LLB
+                                </div>
+                                <div class="ft-links">
+                                <a href="#" class="link">Analyst Jobs</a>
+                                <a href="#" class="link">Due Diligence Jobs </a>
+                                <a href="#" class="link">GST Jobs </a>
+                                <a href="#" class="link">Litigation Jobs</a>
+                                <a href="#" class="link">SEBI Jobs</a>
+                                <a href="#" class="link">Valuation Jobs</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="footer_item">
+                                <div class="ft-title">
+                                    JOBS FOR MBA
+                                </div>
+                                <div class="ft-links">
+                                <a href="#" class="link">Admin Jobs</a>
+                                <a href="#" class="link">Advisory Jobs</a>
+                                <a href="#" class="link">Analyst Jobs</a>
+                                <a href="#" class="link">Education Jobs </a>
+                                <a href="#" class="link">HR Jobs </a>
+                                <a href="#" class="link">Finance Jobs</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="footer-btm-links">
+                        <a href="#" class="link">About Us</a>
+                        <a href="#" class="link">Candidate</a>
+                        <a href="#" class="link">Employer</a>
+                        <a href="#" class="link">Blogs</a>
+                        <a href="#" class="link">Disclaimer</a>
+                        <a href="#" class="link"> Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <!---------------------------- Preloader start ---------------------------->
+            <script src="js/plugins/preloader.js"></script>
+
+            <div id="preloader">
+                <lottie-player id="status"
+                    src="https://assets9.lottiefiles.com/packages/lf20_f1dhzsnx.json"
+                    background="transparent" speed="3" style="width: 200px; height:
+                    200px;" loop autoplay></lottie-player>
+            </div>
+            <!---------------------------- Preloader close ---------------------------->
+
+
+            <!-- script start -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+            
+
+            <!-- swiper js library -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+            <script type="module">
+                import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+                </script>
+            <script src="js/script_swiper.js"></script>
+            <!-- swiper js library end -->
+            
+            <!--Common script -->
+            <script src="js/script.js"></script>
+            <script src="https://cdn.jsdelivr.net/gh/thelevicole/youtube-to-html5-loader@4.0.0/dist/YouTubeToHtml5.js"></script>
+            <script>new YouTubeToHtml5();</script>
+            <script>
+                $('#InterviewDate').datepicker({
+                    // uiLibrary: 'bootstrap5',
+                    showOtherMonths: true,
+                    format: 'dd mmm yyyy'
+                });
+                $('#InterviewTime').timepicker({
+                    mode: 'ampm' ,
+                });
+               
+            </script>
+    </body>
+</html>

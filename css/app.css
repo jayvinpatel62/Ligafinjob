@@ -722,7 +722,7 @@ a,a:hover{
 {
     z-index: 2;
 }
-.white_box_shadow{
+.white_box_shadow,.white-box-shadow{
     position: relative;
     padding: 50px;
     background:var(--bg-white);
@@ -732,7 +732,7 @@ a,a:hover{
 .border-gray{
     border: 0.8px solid var(--gray-50);
 }
-.white_box_border{
+.white_box_border,.white-box-border{
     position: relative;
     padding: 50px;
     background:var(--bg-white);
@@ -983,4 +983,45 @@ ul.list-grid{
     transition: all 0.4s ease-in-out;
     font-weight: 600;
     margin: 0;
+}
+
+.label-strip{
+    background: var(--light);
+    color: var(--dark);
+    padding: 10px;
+    width: 100%;
+}
+.grid_checkbox{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+}
+.customDatepicker .gj-textbox-md{
+    
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: var(--bs-border-radius);
+    font-size: var(--fs-clamp-14);
+    padding: 12px 20px;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+}
+.customDatepicker .gj-datepicker-md [role=right-icon],.customDatepicker .gj-timepicker-md [role=right-icon] {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    font-size: 24px;
+    margin: auto;
 }

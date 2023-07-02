@@ -65,6 +65,7 @@
   .grid_item_count{
       grid-template-columns: repeat( 3, 1fr );
   }
+ 
   .grid_item_count .item-content-box:nth-child(2){
     border-left: 1px solid;
     border-right: 1px solid;
