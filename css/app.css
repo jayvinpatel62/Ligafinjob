@@ -19,7 +19,7 @@
     --black10: rgba(0, 0, 0, 0.1);
     --green:#64CE64;
     --red:#D04444;
-    --orange:#FF8C00;
+    --orange:#F1B859;
     --orange-dark:#bb6802;
 
     --logo_height:50px;
@@ -48,7 +48,18 @@ body {
     font-family: var(--ff-primary);
     color: var(--dark);
 }
-
+.text-yellow,.text-orange{
+    color: var(--orange);
+}
+.text-primary,.text-blue{
+    color: var(--primary);
+}
+.text-dark{
+    color: var(--dark);
+}
+.text-green{
+    color: var(--green);
+}
 a,a:hover{
     text-decoration: none;
 }
