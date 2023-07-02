@@ -100,10 +100,11 @@
             <!---------------------------- Header Inner close ---------------------------->
 
             <!---------------------------- offset_wrapper ---------------------------->
-            <section class="container offset-70">
+            <section class="p-4">
+               <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-4 col-lg-3 mb-3 mb-md-0">
-                       <div class="white_box_shadow border-radius-30 p-0 py-5 h-md-100">
+                       <div class="white_box_border border-radius-10 p-0 py-5 h-md-100">
                             <div class="viewprofile_div">
                                 <div class="viewprofile_pic">
                                     <img src="https://play-lh.googleusercontent.com/BMryS7Cn454jIAVrchF9as-7WOG07H97Lugr62ISdJSo7wj1cC-0MTUm3SqSZffc7IQ" class="img-fluid">
@@ -131,65 +132,78 @@
 
                     </div>
                     <div class="col-12 col-md-8 col-lg-9 mb-3 mb-md-0">
-                        <div class="white_box_shadow border-radius-30 py-5 px-md-5 px-4">
+                        <div class="white_box_border border-radius-10 py-5 px-md-5 px-4">
                             <div class="row row-cols-md-2 row-cols-1">
                                 <div class="col">
                                     <div class="mb-3">
-                                        <label for="CompanyName" class="form-label">Company Name</label>
+                                        <label for="CompanyName" class="form-label">Company Name<span class="required">*</span></label>
                                         <input type="text" class="form-control" id="CompanyName" placeholder="Enter Your Company Name">
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="mb-3">
-                                        <label for="RegistrationNumber" class="form-label">Registration Number</label>
+                                        <label for="RegistrationNumber" class="form-label">Registration Number<span class="required">*</span></label>
                                         <input type="text" class="form-control" id="RegistrationNumber" placeholder="Enter Registration Number">
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="mb-3">
-                                        <label for="Emailaddress" class="form-label">Email address</label>
+                                        <label for="Emailaddress" class="form-label">Email address<span class="required">*</span></label>
                                         <input type="email" class="form-control" id="Emailaddress" placeholder="Email address">
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="mb-3">
-                                        <label for="OfficeNumber" class="form-label">Office Number</label>
+                                        <label for="OfficeNumber" class="form-label">Contact Number<span class="required">*</span></label>
                                         <input type="tel" class="form-control" id="OfficeNumber" placeholder="Enter Office Number">
                                     </div>
                                 </div>
-                                <div class="col col-md-8">
+                                <div class="col">
                                     <div class="mb-3">
-                                        <label for="OfficeAddress" class="form-label">Office Address</label>
+                                        <label for="OfficeAddress" class="form-label">Office Address<span class="required">*</span></label>
                                         <input type="text" class="form-control" id="OfficeAddress" placeholder="Enter Office Address">
                                     </div>
                                 </div>
-                                <div class="col col-md-4">
+                                <div class="col">
                                     <div class="mb-3">
-                                        <label for="City" class="form-label">City</label>
+                                        <label for="City" class="form-label">Loaction<span class="required">*</span></label>
                                         <input type="text" class="form-control" id="City" placeholder="Enter City Name">
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="mb-3">
-                                        <label for="ContactPerson" class="form-label">Contact Person</label>
+                                        <label for="OfficeAddress" class="form-label">Office Address 2</label>
+                                        <input type="text" class="form-control" id="OfficeAddress" placeholder="Enter Office Address">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label for="City" class="form-label">Loaction</label>
+                                        <input type="text" class="form-control" id="City" placeholder="Enter City Name">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label for="ContactPerson" class="form-label">Contact Person<span class="required">*</span></label>
                                         <input type="text" class="form-control" id="ContactPerson" placeholder="Name Contact Person">
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="mb-3">
-                                        <label for="Designation" class="form-label">Designation</label>
+                                        <label for="Designation" class="form-label">Designation<span class="required">*</span></label>
                                         <input type="text" class="form-control" id="Designation" placeholder="Enter Designation">
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="mb-3">
-                                        <label for="Number" class="form-label">Number</label>
+                                        <label for="Number" class="form-label">Mobile Number (POC)</label>
                                         <input type="text" class="form-control" id="Number" placeholder="Number Contact Person">
                                     </div>
                                 </div>
-                                <div class="col">
+                                
+                                <div class="col col-md-12">
                                     <div class="mb-3">
-                                        <label for="Number" class="form-label">Where did you hear about us?</label>
+                                        <label for="Number" class="form-label">Where did you hear about us?<span class="required">*</span></label>
                                         <select class="form-select" aria-label="Default select example">
                                             <option selected>Select from Options</option>
                                             <option value="1">Option One</option>
@@ -198,15 +212,22 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-12">
+                                <div class="col col-md-12">
                                     <div class="btn btn-primary">Update</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+               </div>
             </section>
             <!---------------------------- offset_wrapper close ---------------------------->
+
+            <!----------- adspace ---------->
+                <!-- please remove class "d-none" & after show ads -->
+                <div class="adspace d-none">Ad Here</div> 
+            <!--------- adspace close ---------->
+
            <div class="spacer"></div>
          
             <footer class="footer-sec">
