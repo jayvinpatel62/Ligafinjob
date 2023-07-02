@@ -588,6 +588,14 @@ a,a:hover{
     padding: 20px;
     font-size: var(--fs-clamp-14);
     border-radius:10px;
+    
+}
+.testimonial_item .content p{
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    margin: 0;
 }
 .user_profile{
     --user-pic-size:50px;

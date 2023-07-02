@@ -34,6 +34,9 @@ var blogsSwiper = new Swiper('.blogs_swiper', {
       slidesPerView: 2,
     },
     1024: {
+      slidesPerView: 2,
+    },
+    1360: {
       slidesPerView: 3,
     }
   },
