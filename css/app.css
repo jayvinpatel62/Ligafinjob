@@ -1072,3 +1072,15 @@ ul.list-grid{
     background-color: var(--bs-nav-tabs-link-active-bg);
 }
 /*------------- modal css close --------------------*/
+
+.userLogged_in{
+    --pic-size:40px;
+    width: var(--pic-size);
+    height: var(--pic-size);
+    border-radius:var(--pic-size);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}

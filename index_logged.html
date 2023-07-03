@@ -15,7 +15,7 @@
         <link rel="icon" type="image/png" sizes="192x192" href="favicon_io/android-chrome-192x192.png"> 
         <link rel="manifest" href="favicon_io/site.webmanifest">
 
-        <title>Index</title>
+        <title>Index Login</title>
 
         <script src="js/jquery.min.js"></script>
 
@@ -48,9 +48,9 @@
                 </a>
                 
                 <div class="right-content order-lg-last">
-                    <div class="right-login  d-flex gap-3">
-                        <a href="#" class="userLogged_in" data-bs-toggle="modal" data-bs-target="#login_Modal">
-                            <i class="bi bi-person-circle"></i>
+                    <div class="right-login logged_in d-flex gap-3">
+                        <a href="#" class="userLogged_in">
+                            <img src="images/pic.jpg" alt="" class="img-fluid">
                         </a>
                         <a href="javascript://" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <i class="bi bi-list"></i>
@@ -438,7 +438,7 @@
             <section class="career_testimonial p-md-5 p-3">
                 <div class="career_testimonial_wrapper">
                     <div class="row g-5">
-                        <div class="col col-lg-8 col-xl-9">
+                        <div class="col col-xl-9">
                             <div class="title-main text-center">
                                 <span>Career</span>
                                 <span class="text-primary">Blogs</span>
@@ -519,10 +519,9 @@
                             </div>
                             <!----------blog swiper close -------->
                         </div>
-
-                        <div class="col col-lg-4 col-xl-3">
+                        <div class="col col-xl-3">
                             <div class="title-main text-center">
-                                <span>Our</span>
+                                <span>Our Users </span>
                                 <span class="text-primary">Feedback</span>
                             </div>
                             <br>
@@ -532,9 +531,7 @@
                                     <div class="swiper-slide">
                                        <div class="testimonial_item">
                                             <div class="content">
-                                                <p>
-                                                    We have found CareerSanta to be absolutely professional in their work. They have matched up to our expectations in the staff recruitment for our firm. We shall seek their advice and guidance in all our future HR recruitments and other matters.
-                                                </p>
+                                                We have found CareerSanta to be absolutely professional in their work. They have matched up to our expectations in the staff recruitment for our firm. We shall seek their advice and guidance in all our future HR recruitments and other matters.
                                             </div>
                                             <br>
                                             <div class="user_profile">
@@ -549,9 +546,7 @@
                                     <div class="swiper-slide">
                                         <div class="testimonial_item">
                                              <div class="content">
-                                                 <p>
-                                                    We have found CareerSanta to be absolutely professional in their work. They have matched up to our expectations in the staff recruitment for our firm. We shall seek their advice and guidance in all our future HR recruitments and other matters.
-                                                 </p>
+                                                 We have found CareerSanta to be absolutely professional in their work. They have matched up to our expectations in the staff recruitment for our firm. We shall seek their advice and guidance in all our future HR recruitments and other matters.
                                              </div>
                                              <br>
                                              <div class="user_profile">
@@ -566,9 +561,7 @@
                                      <div class="swiper-slide">
                                         <div class="testimonial_item">
                                              <div class="content">
-                                                <p>
-                                                    We have found CareerSanta to be absolutely professional in their work. They have matched up to our expectations in the staff recruitment for our firm. We shall seek their advice and guidance in all our future HR recruitments and other matters.
-                                                 </p>
+                                                 We have found CareerSanta to be absolutely professional in their work. They have matched up to our expectations in the staff recruitment for our firm. We shall seek their advice and guidance in all our future HR recruitments and other matters.
                                              </div>
                                              <br>
                                              <div class="user_profile">
@@ -583,9 +576,7 @@
                                      <div class="swiper-slide">
                                         <div class="testimonial_item">
                                              <div class="content">
-                                                <p>
-                                                    We have found CareerSanta to be absolutely professional in their work. They have matched up to our expectations in the staff recruitment for our firm. We shall seek their advice and guidance in all our future HR recruitments and other matters.
-                                                 </p>
+                                                 We have found CareerSanta to be absolutely professional in their work. They have matched up to our expectations in the staff recruitment for our firm. We shall seek their advice and guidance in all our future HR recruitments and other matters.
                                              </div>
                                              <br>
                                              <div class="user_profile">
@@ -687,95 +678,6 @@
                     </div>
                 </div>
             </div>
-            <!---------- footer bottom close --------------------------------->
-            
-            <!------------------------ Login Register Modal ---------------------------------->
-            <div class="modal modal-tabs fade" id="login_Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x"></i></button>
-
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="Login-tab" data-bs-toggle="tab" data-bs-target="#Login" type="button" role="tab" aria-controls="Login" aria-selected="true">Login</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="Register-tab" data-bs-toggle="tab" data-bs-target="#Register" type="button" role="tab" aria-controls="Register" aria-selected="false">Register</button>
-                            </li>
-                        </ul>
-                        
-                        <div class="modal-body">
-                            <form>
-                                <div class="tab-content">
-                                    <div class="tab-pane active" id="Login" role="tabpanel" aria-labelledby="Login-tab" tabindex="0">
-                                        <div class="mb-3">
-                                            <input type="email" class="form-control" id="EmailLogin" placeholder="Email">
-                                        </div>
-                                        <div class="mb-3">
-                                            <input type="password" class="form-control" id="password" placeholder="Password">
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="Remember">
-                                                    <label class="form-check-label" for="Remember">
-                                                        Remember me
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col text-md-end">
-                                                <a href="" class="link">Forgot Password?</a>
-                                            </div>
-                                        </div>
-                                        <br>
-                                        <div class="text-center">
-                                            <button type="button" class="btn btn-primary btn-full">Login</button>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane" id="Register" role="tabpanel" aria-labelledby="Register-tab" tabindex="0">
-                                        <div class="mb-3">
-                                            <input type="email" class="form-control" id="EmailRgister" placeholder="Email">
-                                        </div>
-                                        <div class="mb-3">
-                                            <input type="password" class="form-control" id="password" placeholder="Password">
-                                        </div>
-                                    <div class="row">
-                                            <div class="col-md-6 mb-3">
-                                                <input type="text" class="form-control" id="FullName" placeholder="Full Name">
-                                            </div>
-                                            <div class="col-md-6 mb-3">
-                                                <input type="text" class="form-control" id="Mobile" placeholder="Mobile">
-                                            </div>
-                                    </div>
-                                        <div class="mb-3">
-                                            <input type="text" class="form-control" id="PromoCode" placeholder="Promo Code/Reference">
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="accept-terms">
-                                            <label  class="form-check-label" for="accept-terms">
-                                                I agree to the <a href="/Disclaimer.aspx" target="_blank" tabindex="-1">Terms</a>
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="interested">
-                                            <label  class="form-check-label" for="interested">
-                                                Are you interested to participate in our Job Fairs & Workshops?
-                                            </label>
-                                        </div>
-                                        <br>
-                                        <div class="text-center">
-                                            <button type="button" class="btn btn-primary btn-full">Create Account</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!------------------------ Login Register Modal close ---------------------------------->
 
             <!---------------------------- Preloader start ---------------------------->
             <script src="js/plugins/preloader.js"></script>
