@@ -82,6 +82,7 @@
   .nav-home-tab .tab-item{
     width: 100%;
   }
+
 }
   
 @media (width <= 992px){
@@ -117,6 +118,9 @@
   }
   .offset-md-80{
     margin-top: -80px;
+  }
+  .modal-tabs .nav-tabs .nav-link{
+    min-width: 200px;
   }
 
 }

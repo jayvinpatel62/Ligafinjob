@@ -254,6 +254,9 @@ a,a:hover{
     background-color: var(--green);
     border-color: var(--green);
 }
+.btn-full,.btn-fluid{
+    width: 100%;
+}
 
 
 /*-------------------------  Nav-menu start -------------------------------*/
@@ -1024,4 +1027,46 @@ ul.list-grid{
     top: 12px;
     font-size: 24px;
     margin: auto;
+}
+
+.modal{
+    --bs-modal-border-radius:20px;
+    --bs-modal-padding:1.5rem;
+}
+.modal-tabs .modal-header{
+    justify-content: center;
+}
+.modal-tabs .modal-content{
+    border-radius: 0 var(--bs-modal-border-radius) var(--bs-modal-border-radius) var(--bs-modal-border-radius);
+}
+.modal-tabs .btn-close{
+    position: absolute;
+    right: 20px;
+    top: -41px;
+    --bs-btn-close-color: var(--dark);
+    background: #fff;
+    opacity: 1;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--bs-modal-border-radius);
+}
+.modal-tabs .nav-tabs{
+    position: absolute;
+    bottom: 100%;
+    --bs-nav-tabs-border-radius:var(--bs-modal-border-radius);
+}
+.modal-tabs .nav-tabs .nav-link {
+    border: var(--bs-nav-tabs-border-width) solid transparent;
+    padding: 10px 30px;
+    font-size: var(--fs-clamp-18);
+    min-width: 120px;
+    background: #ffffff54;
+    backdrop-filter: blur(20px);
+    color: var(--white);
+}
+.modal-tabs .nav-tabs .nav-item.show .nav-link,.modal .nav-tabs .nav-link.active {
+    color: var(--bs-nav-tabs-link-active-color);
+    background-color: var(--bs-nav-tabs-link-active-bg);
 }
