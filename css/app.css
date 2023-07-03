@@ -1084,3 +1084,22 @@ ul.list-grid{
     justify-content: center;
     font-size: 30px;
 }
+.right-login .dropdown-menu{
+    --bs-dropdown-border-radius:10px;
+    box-shadow: 0 6px 12px #00000033;
+    border: none;
+    padding: 0;
+    overflow: hidden;
+    min-width: 200px;
+    
+}
+.right-login .dropdown-menu .icon-link{
+    --bs-dropdown-item-padding-x: 10px;
+    --bs-dropdown-item-padding-y: 10px;
+    gap: 15px;
+    padding:var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    font-size: 14px;
+}
