@@ -1029,6 +1029,7 @@ ul.list-grid{
     margin: auto;
 }
 
+/*------------- modal css --------------------*/
 .modal{
     --bs-modal-border-radius:20px;
     --bs-modal-padding:1.5rem;
@@ -1070,3 +1071,4 @@ ul.list-grid{
     color: var(--bs-nav-tabs-link-active-color);
     background-color: var(--bs-nav-tabs-link-active-bg);
 }
+/*------------- modal css close --------------------*/
