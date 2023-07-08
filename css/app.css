@@ -1052,7 +1052,7 @@ ul.list-grid{
 .modal-tabs .modal-content{
     border-radius: 0 var(--bs-modal-border-radius) var(--bs-modal-border-radius) var(--bs-modal-border-radius);
 }
-.modal-tabs .btn-close{
+.modal-tabs .modal-content>.btn-close{
     position: absolute;
     right: 20px;
     top: -41px;
@@ -1139,4 +1139,9 @@ ul.list-grid{
     flex-shrink: 0;
     border-top: 1px solid transparent;
     border: none;
+}
+
+
+.toast-100{
+    --bs-toast-max-width:100%;
 }

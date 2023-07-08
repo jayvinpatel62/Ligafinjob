@@ -54,4 +54,12 @@ $(".nav-home-tab .tab-item").click(function(){
     $(this).find('.bi').toggleClass("bi-eye bi-eye-slash"); 
   });
 
-  
+  $('.forgotPasswordWrapper').hide();
+  $(".forgotPasswordLink").click(function(){
+    $(".forgotPasswordWrapper").show(); 
+    $(".loginDivWrapper").hide(); 
+  });
+  $(".backToLogin").click(function(){
+    $(".forgotPasswordWrapper").hide(); 
+    $(".loginDivWrapper").show(); 
+  });

@@ -708,40 +708,81 @@
                         <div class="modal-body">
                                 <div class="tab-content">
                                     <div class="tab-pane active" id="Login" role="tabpanel" aria-labelledby="Login-tab" tabindex="0">
-                                        <form class="needs-validation" novalidate>
+                                        <div class="loginDivWrapper">
+                                            <form class="needs-validation" novalidate>
+                                                <div class="mb-3">
+                                                    <input type="email" class="form-control" id="EmailLogin" placeholder="Email" required>
+                                                    <div class="invalid-feedback">
+                                                        Please valid email address.
+                                                    </div>
+                                                </div>
+                                                <div class="input-group mb-3 LoginpassInput">
+                                                    <input type="password" class="form-control"  id="LoginPass" placeholder="Password" aria-label="LoginPass" aria-describedby="basic-addon1" required>
+                                                    <span class="input-group-text passShowHide" id="LoginPass">
+                                                        <i class="bi bi-eye"></i>
+                                                    </span>
+                                                    <div class="invalid-feedback">
+                                                        Invalid Password
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="Remember">
+                                                            <label class="form-check-label" for="Remember">
+                                                                Remember me
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col text-md-end">
+                                                        <a href="javascript://" class="link forgotPasswordLink">Forgot Password?</a>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="text-center">
+                                                    <button type="submit" class="btn btn-primary btn-full">Login</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="forgotPasswordWrapper">
+                                            <div class="text-center mb-3">Lost your password? Please enter your email address.</div>
+                                            <!----- Invalid Email Id tost message -->
+                                            <div  id="InvalidToast" class="toast toast-100 align-items-center text-bg-danger border-0 mb-3" role="alert" aria-live="assertive" aria-atomic="true">
+                                                <div class="toast-header">
+                                                    <strong class="me-auto">EMAIL ID IS NOT VALID</strong>
+                                                    <small class="text-body-secondary">11 mins ago</small>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                                  </div>
+                                                  <div class="toast-body">
+                                                    Given Email ID is not registered with Legafinjobs.Please provide valid Email ID.
+                                                  </div>
+                                            </div>
+                                            <!----- Invalid Email Id tost message close -->
+                                            <!----- valid Email Id tost message -->
+                                            <div  id="validToast" class="toast toast-100 align-items-center text-bg-success border-0 mb-3" role="alert" aria-live="assertive" aria-atomic="true">
+                                                <div class="toast-header">
+                                                    <strong class="me-auto">YOUR PASSWORD SUCCESSFULLY SENT</strong>
+                                                    <small class="text-body-secondary">11 mins ago</small>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                                  </div>
+                                                  <div class="toast-body">
+                                                    Your login and password details have been sent on your E-mail ID.
+                                                  </div>
+                                            </div>
+                                            <!----- valid Email Id tost message close -->
                                             <div class="mb-3">
-                                                <input type="email" class="form-control" id="EmailLogin" placeholder="Email" required>
+                                                <input type="email" class="form-control" id="EmailRgister" placeholder="Email" required>
                                                 <div class="invalid-feedback">
                                                     Please valid email address.
                                                 </div>
                                             </div>
-                                            <div class="input-group mb-3 LoginpassInput">
-                                                <input type="password" class="form-control"  id="LoginPass" placeholder="Password" aria-label="LoginPass" aria-describedby="basic-addon1" required>
-                                                <span class="input-group-text passShowHide" id="LoginPass">
-                                                    <i class="bi bi-eye"></i>
-                                                </span>
-                                                <div class="invalid-feedback">
-                                                    Invalid Password
-                                                </div>
+                                            <div class="text-center mb-3">
+                                                <button type="submit" class="btn btn-primary btn-full" id="liveToastBtn">Send Now</button>
                                             </div>
-                                            <div class="row">
-                                                <div class="col">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="Remember">
-                                                        <label class="form-check-label" for="Remember">
-                                                            Remember me
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col text-md-end">
-                                                    <a href="" class="link">Forgot Password?</a>
-                                                </div>
-                                            </div>
-                                            <br>
                                             <div class="text-center">
-                                                <button type="submit" class="btn btn-primary btn-full">Login</button>
+                                               <a href="javascript://" class="link link-primary backToLogin">Back to login</a>
                                             </div>
-                                        </form>
+                                        </div>
                                     </div>
                                     <div class="tab-pane" id="Register" role="tabpanel" aria-labelledby="Register-tab" tabindex="0">
                                         <form class="needs-validation" novalidate>
