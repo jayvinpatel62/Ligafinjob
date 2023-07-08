@@ -53,3 +53,5 @@ $(".nav-home-tab .tab-item").click(function(){
   $(".passShowHide").click(function(){
     $(this).find('.bi').toggleClass("bi-eye bi-eye-slash"); 
   });
+
+  

@@ -706,76 +706,97 @@
                         </ul>
                         
                         <div class="modal-body">
-                            <form>
                                 <div class="tab-content">
                                     <div class="tab-pane active" id="Login" role="tabpanel" aria-labelledby="Login-tab" tabindex="0">
-                                        <div class="mb-3">
-                                            <input type="email" class="form-control" id="EmailLogin" placeholder="Email">
-                                        </div>
-                                        <div class="input-group mb-3 LoginpassInput">
-                                            <input type="password" class="form-control"  id="LoginPass" placeholder="Password" aria-label="LoginPass" aria-describedby="basic-addon1">
-                                            <span class="input-group-text passShowHide" id="LoginPass">
-                                                <i class="bi bi-eye"></i>
-                                            </span>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="Remember">
-                                                    <label class="form-check-label" for="Remember">
-                                                        Remember me
-                                                    </label>
+                                        <form class="needs-validation" novalidate>
+                                            <div class="mb-3">
+                                                <input type="email" class="form-control" id="EmailLogin" placeholder="Email" required>
+                                                <div class="invalid-feedback">
+                                                    Please valid email address.
                                                 </div>
                                             </div>
-                                            <div class="col text-md-end">
-                                                <a href="" class="link">Forgot Password?</a>
+                                            <div class="input-group mb-3 LoginpassInput">
+                                                <input type="password" class="form-control"  id="LoginPass" placeholder="Password" aria-label="LoginPass" aria-describedby="basic-addon1" required>
+                                                <span class="input-group-text passShowHide" id="LoginPass">
+                                                    <i class="bi bi-eye"></i>
+                                                </span>
+                                                <div class="invalid-feedback">
+                                                    Invalid Password
+                                                </div>
                                             </div>
-                                        </div>
-                                        <br>
-                                        <div class="text-center">
-                                            <button type="button" class="btn btn-primary btn-full">Login</button>
-                                        </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="Remember">
+                                                        <label class="form-check-label" for="Remember">
+                                                            Remember me
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col text-md-end">
+                                                    <a href="" class="link">Forgot Password?</a>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="text-center">
+                                                <button type="submit" class="btn btn-primary btn-full">Login</button>
+                                            </div>
+                                        </form>
                                     </div>
                                     <div class="tab-pane" id="Register" role="tabpanel" aria-labelledby="Register-tab" tabindex="0">
-                                        <div class="mb-3">
-                                            <input type="email" class="form-control" id="EmailRgister" placeholder="Email">
-                                        </div>
-                                        <div class="mb-3">
-                                            <input type="password" class="form-control" id="password" placeholder="Password">
-                                        </div>
-                                       
-                                      
-                                    <div class="row">
-                                            <div class="col-md-6 mb-3">
-                                                <input type="text" class="form-control" id="FullName" placeholder="Full Name">
+                                        <form class="needs-validation" novalidate>
+                                            <div class="mb-3">
+                                                <input type="email" class="form-control" id="EmailRgister" placeholder="Email" required>
+                                                <div class="invalid-feedback">
+                                                    Please valid email address.
+                                                </div>
                                             </div>
-                                            <div class="col-md-6 mb-3">
-                                                <input type="text" class="form-control" id="Mobile" placeholder="Mobile">
+                                            <div class="mb-3">
+                                                <input type="password" class="form-control" id="passwordRegister" placeholder="Password" required>
+                                                <div class="invalid-feedback">
+                                                    Please valid email address.
+                                                </div>
                                             </div>
-                                    </div>
-                                        <div class="mb-3">
-                                            <input type="text" class="form-control" id="PromoCode" placeholder="Promo Code/Reference">
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="accept-terms">
-                                            <label  class="form-check-label" for="accept-terms">
-                                                I agree to the <a href="/Disclaimer.aspx" target="_blank" tabindex="-1">Terms</a>
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="interested">
-                                            <label  class="form-check-label" for="interested">
-                                                Are you interested to participate in our Job Fairs & Workshops?
-                                            </label>
-                                        </div>
-                                        <br>
-                                        <div class="text-center">
-                                            <button type="button" class="btn btn-primary btn-full">Create Account</button>
-                                        </div>
+                                        
+                                            <div class="row">
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" id="FullName" placeholder="Full Name" required>
+                                                    <div class="valid-feedback">
+                                                        Looks good!
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" id="Mobile" placeholder="Mobile" required>
+                                                    <div class="invalid-feedback">
+                                                        Please valid Mobile Number
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control" id="PromoCode" placeholder="Promo Code/Reference" >
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="accept-terms" required>
+                                                <label  class="form-check-label" for="accept-terms">
+                                                    I agree to the <a href="/Disclaimer.aspx" target="_blank" tabindex="-1">Terms</a>
+                                                </label>
+                                                <div class="invalid-feedback">
+                                                    You must agree before submitting.
+                                                </div>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="interested">
+                                                <label  class="form-check-label" for="interested">
+                                                    Are you interested to participate in our Job Fairs & Workshops?
+                                                </label>
+                                            </div>
+                                            <br>
+                                            <div class="text-center">
+                                                <button type="submit" class="btn btn-primary btn-full">Create Account</button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
-                            
-                            </form>
                         </div>
                     </div>
                 </div>
@@ -796,7 +817,7 @@
 
             <!-- script start -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-            
+            <script src="js/validation.js"></script>
 
             <!-- swiper js library -->
             <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
