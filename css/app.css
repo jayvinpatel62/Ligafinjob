@@ -938,6 +938,9 @@ ul.list-grid{
     font-weight: bold;
     color: var(--dark-blue);
 }
+.item-content-box .count .downaload-icon{
+    color: var(--dark-blue);
+}
 .grid_item_count.grid_count_5 .item-content-box .count{
     font-size: var(--fs-clamp-30);
 }
