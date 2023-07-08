@@ -65,9 +65,11 @@
   .grid_item_count{
       grid-template-columns: repeat( 3, 1fr );
   }
+ .grid_item_count.grid_count_5{
+    grid-template-columns: repeat( 5, 1fr );
+  } 
  
-  .grid_item_count .item-content-box:nth-child(2){
-    border-left: 1px solid;
+  .grid_item_count.border-lf .item-content-box{
     border-right: 1px solid;
     border-top: 0px;
     border-bottom: 0px;
