@@ -887,6 +887,12 @@ a,a:hover{
     font-size: var(--fs-clamp-14);
     padding: 12px 20px;
 }
+.form-select-sm{
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.5rem;
+    font-size: .875rem;
+}
 .form-control-sm[type=file]:not(:disabled):not([readonly]) {
     font-size: var(--fs-clamp-14);
     padding: 0.25rem 0.5rem;
@@ -1177,4 +1183,51 @@ ul.list-grid{
 .table-candidate thead th{
     min-width: 250px;
     white-space: nowrap;
+}
+.table-applicantlist thead tr th{
+    width: 250px;
+    min-width: 100px;
+    white-space: nowrap;
+    font-size: var(--fs-clamp-16);
+    color: var(--dark);
+
+}
+.table-applicantlist thead tr th a{
+    color: var(--dark);
+}
+.table-applicantlist tbody tr td{
+    font-size: var(--fs-clamp-14);
+}
+.table-applicantlist thead tr {
+    background: #fff;
+    border-bottom: 5px solid var(--primary);
+    font-weight: bold;
+    color: #334960;
+}
+.table-applicantlist thead tr th:first-child,.table-applicantlist thead tr th:nth-of-type(2){
+    width: 50px;
+    min-width: 50px;
+}
+.td-250{
+   width: 250px;
+}
+.td-150{
+    width: 150px;
+}
+.td-80{
+    width: 80px;
+}
+.td-50{
+    width: 50px;
+}
+
+.table-action-tools{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dataTables_info{
+    font-size: var(--fs-clamp-12);
 }
