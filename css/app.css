@@ -836,13 +836,27 @@ a,a:hover{
 .viewprofile_div{
     text-align: center;
 }
+
+.viewprofile_div.candidate .viewprofile_pic{
+    --viewProfile_size:130px;
+}
+.viewprofile_pic.no-img{
+    background: var(--muted);
+    color: var(--white);
+    font-size: medium;
+    
+}
 .viewprofile_pic{
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
     --viewProfile_size:170px;
     width: var(--viewProfile_size);
     height:  var(--viewProfile_size);
     border-radius: var(--viewProfile_size);
     overflow: hidden;
+    margin-bottom: 20px;
 }
 .viewOpening_List{
     list-style: none;
@@ -866,12 +880,16 @@ a,a:hover{
     font-weight: bold;
     font-size: var(--fs-clamp-18);
 }
-.form-label .required{
+.form-label .required,*>.required{
     color: var(--red);
 }
 .form-control,.form-select{
     font-size: var(--fs-clamp-14);
     padding: 12px 20px;
+}
+.form-control-sm[type=file]:not(:disabled):not([readonly]) {
+    font-size: var(--fs-clamp-14);
+    padding: 0.25rem 0.5rem;
 }
 .form-control::placeholder{
     color: var(--muted);
@@ -1144,4 +1162,15 @@ ul.list-grid{
 
 .toast-100{
     --bs-toast-max-width:100%;
+}
+.accordionCustom{
+    --bs-accordion-active-bg:var(--light-gray);
+    --bs-accordion-btn-bg:var(--light-gray);
+    --bs-accordion-btn-focus-box-shadow:var(--light-gray);
+}
+
+.accordionCustom .accordion-item {
+    border: 1px solid var(--bs-accordion-border-color);
+    border-radius: 10px;
+    overflow: hidden;
 }
