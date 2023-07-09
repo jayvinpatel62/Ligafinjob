@@ -1174,3 +1174,7 @@ ul.list-grid{
     border-radius: 10px;
     overflow: hidden;
 }
+.table-candidate thead th{
+    min-width: 250px;
+    white-space: nowrap;
+}
