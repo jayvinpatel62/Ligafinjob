@@ -245,6 +245,7 @@ a,a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding:0;
 }
 .btn-primary{
     background-color: var(--primary);
@@ -463,7 +464,7 @@ a,a:hover{
 }
 .guide-video{
     
-    height: 150px;
+    height: 180px;
     border: 1px solid white;
 }
 
@@ -742,13 +743,13 @@ a,a:hover{
     border: 1px solid var(--gray-50);
 }
 .border-radius-10{
-    border-radius:10px;
+    border-radius:10px !important;
 }
 .border-radius-20{
-    border-radius: 20px;
+    border-radius: 20px !important;
 }
 .border-radius-30{
-    border-radius: 30px;
+    border-radius: 30px !important;
 }
 .offset_wrapper{
     position: relative;
@@ -776,12 +777,68 @@ a,a:hover{
     flex-direction: column;
     gap: 10px;
 }
+.list-row{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.list-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+    flex-wrap: wrap;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(var(--grid-columns, 12), 1fr);
+    gap: var(--grid-gap, 1.5rem);
+}
+.grid .g-col-1 {
+    grid-column: auto/span 1;
+}
+.grid .g-col-2 {
+    grid-column: auto/span 2;
+}
+.grid .g-col-3 {
+    grid-column: auto/span 3;
+}
+.grid .g-col-4 {
+    grid-column: auto/span 4;
+}
+.grid .g-col-5 {
+    grid-column: auto/span 5;
+}
+.grid .g-col-6 {
+    grid-column: auto/span 6;
+}
+.grid .g-col-7 {
+    grid-column: auto/span 7;
+}
+.grid .g-col-8 {
+    grid-column: auto/span 8;
+}
+.grid .g-col-9 {
+    grid-column: auto/span 9;
+}
+.grid .g-col-10 {
+    grid-column: auto/span 10;
+}
+.grid .g-col-11 {
+    grid-column: auto/span 11;
+}
+.grid .g-col-12 {
+    grid-column: auto/span 12;
+}
+.text_with_icon .text{
+    line-break: anywhere;
+}
 .text_with_icon{
     display: flex;
     align-items: center;
     gap: 10px;
     font-size: var(--normal-text);
     color: var(--muted);
+   
 }
 
 .auto-fill{
@@ -1181,8 +1238,9 @@ ul.list-grid{
     overflow: hidden;
 }
 .table-candidate thead th{
-    min-width: 250px;
-    white-space: nowrap;
+   
+   min-width:50px;
+   white-space: nowrap;
 }
 .table-applicantlist thead tr th{
     width: 250px;
@@ -1230,4 +1288,47 @@ ul.list-grid{
 
 .dataTables_info{
     font-size: var(--fs-clamp-12);
+}
+
+.cstmCheck{
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+.cstmCheck input{
+    margin-top:6px;
+}
+.tableCstmCheck td input{
+    margin-right:10px;
+}
+.tableCstmCheck tr {
+    display: grid;
+    flex-wrap: wrap;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.radioTable td {
+    display: inline-flex;
+    gap: 10px;
+    margin-right: 20px;
+}
+.captchaWrapper {
+    display: flex !important;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.table-candidate .form-control, .table-candidate .form-select {
+    font-size: var(--fs-clamp-14);
+    padding: 6px 12px;
+}
+
+.divPhoto{
+    background-size:cover;
+}
+.table-moreInfo th{
+    white-space: nowrap;
 }

@@ -15,7 +15,7 @@
         <link rel="icon" type="image/png" sizes="192x192" href="favicon_io/android-chrome-192x192.png"> 
         <link rel="manifest" href="favicon_io/site.webmanifest">
 
-        <title>Candidate Profile</title>
+        <title>View Profile</title>
 
         <script src="js/jquery.min.js"></script>
 
@@ -93,7 +93,7 @@
             <!---------------------------- Header Inner start---------------------------->
             <header class="header-inner">
                 <div class="p-5 text-center">
-                    <div class="title-64 bold uppr">My Profile</div>
+                    <div class="title-64 bold uppr">Profile</div>
                     <div class="subtext fs-32">We Support Your Ideas While You Build Great Things</div>
                 </div>
             </header>
@@ -102,215 +102,122 @@
             <!---------------------------- offset_wrapper ---------------------------->
             <section class="p-4">
                <div class="container">
-                <div class="white_box_shadow border-gray border-radius-10 py-5 px-md-5 px-4">
-                    <div class="row align-items-center">
-                        <div class="col-12 col-md-auto mb-3 mb-md-0">
-                            <div class="viewprofile_div text-start">
-                                <div class="viewprofile_pic border-radius-10 m-0">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-3 mb-3 mb-md-0">
+                       <div class="white_box_shadow border-gray border-radius-10 p-0 py-5 h-md-100">
+                            <div class="viewprofile_div">
+                                <div class="viewprofile_pic">
                                     <img src="https://play-lh.googleusercontent.com/BMryS7Cn454jIAVrchF9as-7WOG07H97Lugr62ISdJSo7wj1cC-0MTUm3SqSZffc7IQ" class="img-fluid">
+                                </div>
+                                <div class="content text-center">
+                                    <h4 class="fs-20 bold">Company Name </h4>
+                                    <p>CA Firm</p>
+                                </div>
+                            </div>
+                            <ul class="viewOpening_List">
+                                <li class="item">
+                                    <span class="text">Openings Posted </span>
+                                    <span class="count text-yellow">15</span>
+                                </li>
+                                <li class="item">
+                                    <span class="text">Openings Active</span>
+                                    <span class="count text-green">15</span>
+                                </li>
+                                <li class="item">
+                                    <span class="text">Application received </span>
+                                    <span class="count text-dark">15</span>
+                                </li>
+                            </ul>
+                       </div>
+
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-9 mb-3 mb-md-0">
+                        <div class="white_box_shadow border-gray border-radius-10 py-5 px-md-5 px-4">
+                            <div class="row row-cols-md-2 row-cols-1">
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label for="CompanyName" class="form-label">Company Name<span class="required">*</span></label>
+                                        <input type="text" class="form-control" id="CompanyName" placeholder="Enter Your Company Name">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label for="RegistrationNumber" class="form-label">Registration Number<span class="required">*</span></label>
+                                        <input type="text" class="form-control" id="RegistrationNumber" placeholder="Enter Registration Number">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label for="Emailaddress" class="form-label">Email address<span class="required">*</span></label>
+                                        <input type="email" class="form-control" id="Emailaddress" placeholder="Email address">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label for="OfficeNumber" class="form-label">Contact Number<span class="required">*</span></label>
+                                        <input type="tel" class="form-control" id="OfficeNumber" placeholder="Enter Office Number">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label for="OfficeAddress" class="form-label">Office Address<span class="required">*</span></label>
+                                        <input type="text" class="form-control" id="OfficeAddress" placeholder="Enter Office Address">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label for="City" class="form-label">Loaction<span class="required">*</span></label>
+                                        <input type="text" class="form-control" id="City" placeholder="Enter City Name">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label for="OfficeAddress" class="form-label">Office Address 2</label>
+                                        <input type="text" class="form-control" id="OfficeAddress" placeholder="Enter Office Address">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label for="City" class="form-label">Loaction</label>
+                                        <input type="text" class="form-control" id="City" placeholder="Enter City Name">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label for="ContactPerson" class="form-label">Contact Person<span class="required">*</span></label>
+                                        <input type="text" class="form-control" id="ContactPerson" placeholder="Name Contact Person">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label for="Designation" class="form-label">Designation<span class="required">*</span></label>
+                                        <input type="text" class="form-control" id="Designation" placeholder="Enter Designation">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label for="Number" class="form-label">Mobile Number (POC)</label>
+                                        <input type="text" class="form-control" id="Number" placeholder="Number Contact Person">
+                                    </div>
+                                </div>
+                                
+                                <div class="col col-md-12">
+                                    <div class="mb-3">
+                                        <label for="Number" class="form-label">Where did you hear about us?<span class="required">*</span></label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Select from Options</option>
+                                            <option value="1">Option One</option>
+                                            <option value="2">Option Two</option>
+                                            <option value="3">Option Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col col-md-12">
+                                    <a href="javascript://" class="btn btn-primary">Update</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md">
-                            <h4 class="Name fs-24 bold text-primary">Name</h4>
-                            <div class="grid gap-3">
-                                <div class="g-col-12 g-col-md-6 g-col-lg-4">
-                                    <div class=" text_with_icon">
-                                        <div class="icon">
-                                         <i class="bi bi-telephone"></i>
-                                        </div>
-                                         <span class="text">+91 987 6543 210</span>
-                                     </div>
-                                </div>
-                                <div class="g-col-12 g-col-md-6 g-col-lg-4">
-                                    <div class="text_with_icon">
-                                        <div class="icon">
-                                            <i class="bi bi-briefcase"></i>
-                                        </div>
-                                        <span class="text">5 to 6 yrs of experience</span>
-                                    </div>
-                                </div>
-                                <div class="g-col-12 g-col-md-6 g-col-lg-4">
-                                    <div class="text_with_icon">
-                                        <div class="icon">
-                                            <i class="bi bi-mortarboard"></i>
-                                        </div>
-                                        <span class="text">Highest Degree Completed</span>
-                                    </div>
-                                </div>
-                                <div class="g-col-12 g-col-md-6 g-col-lg-4">
-                                    <div class="text_with_icon">
-                                        <div class="icon">
-                                            <i class="bi bi-envelope"></i>
-                                        </div>
-                                        <span class="text">name@gmail.com</span>
-                                    </div>
-                                </div>
-                                <div class="g-col-12  g-col-lg-8">
-                                    <div class="text_with_icon">
-                                        <div class="icon"><i class="bi bi-linkedin"></i></div>
-                                        <span class="text">https://www.linkedin.com/in/8a8363169/</span>
-                                    </div>
-                                </div>
-                                <div class="g-col-12">
-                                    <div class="text_with_icon">
-                                        <div class="icon"><i class="bi bi-geo-alt"></i></div>
-                                        <span class="text">Mumbai - Central 2 ( Kalyan to Ghatkopar), Sakinaka</span>
-                                    </div>
-                                </div>
-                            </div>                 
-                        </div>
                     </div>
-                  
-                    <div class="spacer"></div>
-
-                    <h4 class="bold mb-3">EDUCATIONAL BACKGROUND</h4>
-                    <div class="table-responsive">
-                        <table class="table table-candidate">
-                            <thead class="table-dark">
-                              <tr>
-                                <th scope="col" width="200px">Examination</th>
-                                <th scope="col" width="200px">Year</th>
-                                <th scope="col" width="200px">% Obtained</th>
-                                <th scope="col">Details</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row">BMS Finance</th>
-                                <td>Mar-2014</td>
-                                <td>7.8/10</td>
-                                <td>
-                                    <p>
-                                        Fixing up calls and meetings as instructed and managing requirements in terms of resources 
-                                    </p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">HSC</th>
-                                <td>Mar-2011</td>
-                                <td>79%</td>
-                                <td>
-                                    <p>
-                                        Fixing up calls and meetings as instructed and managing requirements in terms of resources 
-                                    </p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">SSC</th>
-                                <td>Mar-2009</td>
-                                <td>84%</td>
-                                <td>
-                                    <p>
-                                        Fixing up calls and meetings as instructed and managing requirements in terms of resources 
-                                    </p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td colspan="4">
-                                    <b>College Name:</b>
-                                    <span>DJ Sanghvi</span>
-                                </td>
-                              </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="spacer"></div>
-
-                    <h4 class="bold mb-3">WORK EXPERIENCE</h4>
-                    <div class="table-responsive">
-                        <table class="table table-candidate">
-                            <thead class="table-dark">
-                                <tr>
-                                <th scope="col" width="300px">Period</th>
-                                <th scope="col" width="200px">Organization</th>
-                                <th scope="col" >Details</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                <td>Jul-2018 - Aug-2023</td>
-                                <th scope="row">Naik Naik & Co.</th>
-                                <td>
-                                    <p>
-                                        Fixing up calls and meetings as instructed and managing requirements in terms of resources 
-                                    </p>
-                                </td>
-                                </tr>
-                                <tr>
-                                <td>Mar-2015 - Jun-2018</td>
-                                <th scope="row">Kelkar & Co.</th>
-                                <td>
-                                    <p>
-                                        Fixing up calls and meetings as instructed and managing requirements in terms of resources 
-                                    </p>
-                                </td>
-                                </tr>
-                                <tr>
-                                <td>Mar-2014 - Jan-2015</td>
-                                <th scope="row">Himanshu Shah & Co.</th>
-                                <td>
-                                    <p>
-                                        Fixing up calls and meetings as instructed and managing requirements in terms of resources 
-                                    </p>
-                                </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="spacer"></div>
-
-                    <h4 class="bold mb-3">MORE INFO</h4>
-                    <div class="table-responsive">
-                        <table class="table table-moreInfo">
-                            <tr>
-                                <th scope="col" width="250px">Profile Preference:</th>
-                                <td>Banking, Finance, Corporate Finance, Valuation, Analyst, Invt Banking</td>
-                            </tr>
-                            <tr>
-                                <th>Industries :</th>
-                                <td>Financial Services, Banks and NBFC, Real Estate and Renting</td>
-                            </tr>
-                            <tr>
-                                <th>Current Annual Salary :</th>
-                                <td>5</td>
-                            </tr>
-                            <tr>
-                                <th>Expected Annual Salary :</th>
-                                <td>7</td>
-                            </tr>
-                            <tr>
-                                <th>Notice Period :</th>
-                                <td>30 days</td>
-                            </tr>
-                            <tr>
-                                <th>Exam Leave needed :</th>
-                                <td>Not giving exam</td>
-                            </tr>
-                            <tr>
-                                <th>Reason for change :</th>
-                                <td>Better Career Prospects,Any other</td>
-                            </tr>
-                            <tr>
-                                <th>Nature of openings: </th>
-                                <td>Bcom (Completed or Pursuing), CFA (Qualified or Pursuing), OTHERS</td>
-                            </tr>
-                            <tr>
-                                <th>Sub Category :</th>
-                                <td>Job Qualified</td>
-                            </tr>
-                        </table>
-                    </div>
-
-                    <div class="spacer"></div>
-
-                    <p>
-                        Johncy Mathai, Male, Mumbai - Central 2 ( Kalyan to Ghatkopar), Bcom (Completed or Pursuing), CFA (Qualified or Pursuing), OTHERS, College Name: Valia College of commerce and arts, Years of experience: 1 to 2 years, Current Company: Corporate, Current Annual Salary: 5, Expected Annual Salary: 7, Notice Period: 30 days, Year of passing Graduation: 2014, Year of passing Post Graduation: , Profile preference: Banking, Finance, Corporate Finance, Valuation, Analyst, Invt Banking, Reason for change: Better Career Prospects,Any other, Exam Leave needed: Not giving exam, Completed Highest Degrees: BMS Finance, SubLocation: Saki Naka, TotalJobApply: 0, Industries: Financial Services, Banks and NBFC, Real Estate and Renting, Current/Last Organisation Name: MSCI, Designation: Real estate Analyst , LinkedIn Profile Link: https://www.linkedin.com/in/johncy-mathai-8a8363169/,
-                    </p>
-                    <a href="javascript://" class="btn btn-dark btn-round btn-sm">Copy Summary</a>
-                 
                 </div>
                </div>
             </section>
