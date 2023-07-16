@@ -44,16 +44,16 @@
     --normal-text:14px;
     --fs-clamp-12:12px;
     --fs-clamp-14:14px;
-    --fs-clamp-16:clamp(0.75rem, 0.7143rem + 0.1786vw, 1rem);
-    --fs-clamp-18:clamp(0.875rem, 0.8393rem + 0.1786vw, 1.125rem);
-    --fs-clamp-20:clamp(1rem, 0.9643rem + 0.1786vw, 1.25rem);
-    --fs-clamp-24:clamp(1.25rem, 1.2143rem + 0.1786vw, 1.5rem);
-    --fs-clamp-30:clamp(1.5rem, 1.4464rem + 0.2679vw, 1.875rem);
-    --fs-clamp-32:clamp(1.5rem, 1.4286rem + 0.3571vw, 2rem);
-    --fs-clamp-40:clamp(2.125rem, 2.0714rem + 0.2679vw, 2.5rem);
-    --fs-clamp-50:clamp(2.5rem, 2.4107rem + 0.4464vw, 3.125rem);
-    --fs-clamp-60: clamp(1.875rem, 1.6071rem + 1.3393vw, 3.75rem);
-    --fs-clamp-64: clamp(2.125rem, 1.8571rem + 1.3393vw, 4rem);
+    --fs-clamp-16:clamp(0.875rem, 0.848rem + 0.1351vw, 1rem);
+    --fs-clamp-18:clamp(1rem, 0.973rem + 0.1351vw, 1.125rem);
+    --fs-clamp-20:clamp(1rem, 0.9459rem + 0.2703vw, 1.25rem);
+    --fs-clamp-24:clamp(1.25rem, 1.1959rem + 0.2703vw, 1.5rem);
+    --fs-clamp-30:clamp(1.625rem, 1.5709rem + 0.2703vw, 1.875rem);
+    --fs-clamp-32:clamp(1.625rem, 1.5439rem + 0.4054vw, 2rem);
+    --fs-clamp-40:clamp(2.25rem, 2.1959rem + 0.2703vw, 2.5rem);
+    --fs-clamp-50:clamp(2.5rem, 2.3649rem + 0.6757vw, 3.125rem);
+    --fs-clamp-60:clamp(2.75rem, 2.5338rem + 1.0811vw, 3.75rem);
+    --fs-clamp-64:clamp(2.125rem, 1.7196rem + 2.027vw, 4rem);
 
 
 }
