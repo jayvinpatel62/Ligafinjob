@@ -114,7 +114,7 @@
                                     <p>CA Firm</p>
                                 </div>
                             </div>
-                            <ul class="viewOpening_List">
+                            <!-- <ul class="viewOpening_List">
                                 <li class="item">
                                     <span class="text">Openings Posted </span>
                                     <span class="count text-yellow">15</span>
@@ -127,7 +127,7 @@
                                     <span class="text">Application received </span>
                                     <span class="count text-dark">15</span>
                                 </li>
-                            </ul>
+                            </ul> -->
                        </div>
 
                     </div>
@@ -160,14 +160,25 @@
                                 </div>
                                 <div class="col">
                                     <div class="mb-3">
-                                        <label for="OfficeAddress" class="form-label">Office Address<span class="required">*</span></label>
+                                        <label for="OfficeAddress" class="form-label">Office Address 1<span class="required">*</span></label>
                                         <input type="text" class="form-control" id="OfficeAddress" placeholder="Enter Office Address">
                                     </div>
                                 </div>
-                                <div class="col">
+                                <div class="col col-md-6 col-lg-3">
                                     <div class="mb-3">
-                                        <label for="City" class="form-label">Loaction<span class="required">*</span></label>
-                                        <input type="text" class="form-control" id="City" placeholder="Enter City Name">
+                                        <label for="SelecttheCity" class="form-label">Loaction<span class="required">*</span></label>
+                                        <select class="form-select" aria-label="SelecttheCity">
+                                            <option selected>Select the City</option>
+                                            <option value="1">Option One</option>
+                                            <option value="2">Option Two</option>
+                                            <option value="3">Option Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col col-md-6 col-lg-3">
+                                    <div class="mb-3">
+                                        <label for="AutoSelectPincode" class="form-label">Pincode<span class="required">*</span></label>
+                                        <input type="text" class="form-control" id="AutoSelectPincode" placeholder="Auto Select Pincode">
                                     </div>
                                 </div>
                                 <div class="col">
@@ -176,10 +187,21 @@
                                         <input type="text" class="form-control" id="OfficeAddress" placeholder="Enter Office Address">
                                     </div>
                                 </div>
-                                <div class="col">
+                               <div class="col col-md-6 col-lg-3">
                                     <div class="mb-3">
-                                        <label for="City" class="form-label">Loaction</label>
-                                        <input type="text" class="form-control" id="City" placeholder="Enter City Name">
+                                        <label for="SelecttheCity2" class="form-label">Loaction</label>
+                                        <select class="form-select" aria-label="SelecttheCity2">
+                                            <option selected>Select the City</option>
+                                            <option value="1">Option One</option>
+                                            <option value="2">Option Two</option>
+                                            <option value="3">Option Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col col-md-6 col-lg-3">
+                                    <div class="mb-3">
+                                        <label for="AutoSelectPincode2" class="form-label">Pincode</label>
+                                        <input type="text" class="form-control" id="AutoSelectPincode2" placeholder="Auto Select Pincode">
                                     </div>
                                 </div>
                                 <div class="col">
@@ -194,7 +216,7 @@
                                         <input type="text" class="form-control" id="Designation" placeholder="Enter Designation">
                                     </div>
                                 </div>
-                                <div class="col">
+                                <div class="col col-md-12 col-lg-6">
                                     <div class="mb-3">
                                         <label for="Number" class="form-label">Mobile Number (POC)</label>
                                         <input type="text" class="form-control" id="Number" placeholder="Number Contact Person">
