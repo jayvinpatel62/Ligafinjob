@@ -32,8 +32,9 @@
 
         <!--------- Date picker start-->
         
-        <script src="https://unpkg.com/gijgo@1.9.14/js/gijgo.min.js" type="text/javascript"></script>
-        <link href="https://unpkg.com/gijgo@1.9.14/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="css/daterangepicker.css" />
+        <script type="text/javascript" src="js/plugins/moment.min.js"></script>
+        <script type="text/javascript" src="js/plugins/daterangepicker.js"></script>
        
         <!--------- Date picker end-->
 
@@ -985,7 +986,7 @@
                             <div class="col">
                                 <div class="mb-3">
                                     <label for="RegisteredBetween" class="form-label">Registered Between</label>
-                                    <input type="text" class="form-control" id="RegisteredBetween" placeholder="Dates Registered Between ">
+                                    <input type="text" class="form-control RegisteredBetween" id="RegisteredBetween" placeholder="Dates Registered Between ">
                                 </div>
                             </div>
                             <div class="col">
@@ -1286,21 +1287,32 @@
                 </script>
             <script src="js/script_swiper.js"></script>
             <!-- swiper js library end -->
+
+            
             
             <!--Common script -->
             <script src="js/script.js"></script>
             <script src="https://cdn.jsdelivr.net/gh/thelevicole/youtube-to-html5-loader@4.0.0/dist/YouTubeToHtml5.js"></script>
             <script>new YouTubeToHtml5();</script>
-            <script>
-                $('#InterviewDate').datepicker({
-                    // uiLibrary: 'bootstrap5',
-                    showOtherMonths: true,
-                    format: 'dd mmm yyyy'
+            <script type="text/javascript">
+                $(function() {
+                  $('.RegisteredBetween').daterangepicker({
+                      autoUpdateInput: true,
+                      locale: {
+                          cancelLabel: 'Clear',
+                          format: 'DD/MM/YYYY'
+                      }
+                  });
+                
+                  $('.RegisteredBetween').on('apply.daterangepicker', function(ev, picker) {
+                      $(this).val(picker.startDate.format('DD/MM/YYYY') + ' - ' + picker.endDate.format('DD/MM/YYYY'));
+                  });
+                
+                  $('.RegisteredBetween').on('cancel.daterangepicker', function(ev, picker) {
+                      $(this).val('');
+                  });
+                
                 });
-                $('#InterviewTime').timepicker({
-                    mode: 'ampm' ,
-                });
-               
-            </script>
+                </script>
     </body>
 </html>
