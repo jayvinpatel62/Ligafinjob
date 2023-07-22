@@ -1406,3 +1406,21 @@ ul.list-grid{
     background: var(--under-review-light);
     color: var(--under-review);
 }
+
+
+.scrollTop{
+    --shape-size:50px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-white);
+    font-size: 30px;
+    width: var(--shape-size);
+    height: var(--shape-size);
+    border-radius: 100px;
+    box-shadow: 0 3px 10px #00000020;
+    z-index: 99999;
+}

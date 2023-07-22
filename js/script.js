@@ -8,6 +8,14 @@ $(window).scroll(function() {
     }
 });
 
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 500) {
+    $('.scrollTop').show();
+  } else {
+    $('.scrollTop').hide();
+  }
+});
+
 $('.scrollTop').click(function() {
   $('html, body').animate({
       scrollTop : 0
