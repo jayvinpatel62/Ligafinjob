@@ -217,6 +217,9 @@
   /*.guide-video{
      width: 50%;
   }*/
+  .white_box_shadow,.white-box-shadow{
+    padding: 50px;
+  }
   .footer-sec .row .col{
     border-right: 1px solid  var(--gray);
   }

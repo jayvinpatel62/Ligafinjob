@@ -71,3 +71,10 @@ $(".nav-home-tab .tab-item").click(function(){
     $(".forgotPasswordWrapper").hide(); 
     $(".loginDivWrapper").show(); 
   });
+
+  Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+  });
+  Fancybox.bind('[data-fancybox="Video-gallery"]', {
+    // Your custom options
+  });
