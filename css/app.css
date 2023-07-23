@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Mohave:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
 :root {
 
     --primary: #0D99FF;
+    --primary-20:#0d9aff20;
+    --primary-50:#0d9aff50;
     --blue: #0045FF;
     --dark-blue:#0B4999;
     --white: #fff;
@@ -37,8 +39,11 @@
 
     --logo_height:50px;
 
-    --ff-primary: 'Inter', sans-serif;
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-roboto: 'Roboto', sans-serif;
     --ff-inter: 'Inter', sans-serif;
+    --ff-header: 'Mohave', sans-serif;
+    --ff-mohave: 'Mohave', sans-serif;
     --bs-icon:bootstrap-icons!important;
 
     --normal-text:14px;
@@ -47,9 +52,13 @@
     --fs-clamp-16:clamp(0.875rem, 0.848rem + 0.1351vw, 1rem);
     --fs-clamp-18:clamp(1rem, 0.973rem + 0.1351vw, 1.125rem);
     --fs-clamp-20:clamp(1rem, 0.9459rem + 0.2703vw, 1.25rem);
+    --fs-clamp-22:clamp(1.125rem, 1.0709rem + 0.2703vw, 1.375rem);
     --fs-clamp-24:clamp(1.25rem, 1.1959rem + 0.2703vw, 1.5rem);
     --fs-clamp-30:clamp(1.625rem, 1.5709rem + 0.2703vw, 1.875rem);
     --fs-clamp-32:clamp(1.625rem, 1.5439rem + 0.4054vw, 2rem);
+    --fs-clamp-34:clamp(1.75rem, 1.6689rem + 0.4054vw, 2.125rem);
+    --fs-clamp-36:clamp(1.875rem, 1.7939rem + 0.4054vw, 2.25rem);
+    --fs-clamp-38:clamp(1.75rem, 1.6149rem + 0.6757vw, 2.375rem);
     --fs-clamp-40:clamp(2.25rem, 2.1959rem + 0.2703vw, 2.5rem);
     --fs-clamp-50:clamp(2.5rem, 2.3649rem + 0.6757vw, 3.125rem);
     --fs-clamp-60:clamp(2.75rem, 2.5338rem + 1.0811vw, 3.75rem);
@@ -95,9 +104,19 @@ a,a:hover{
 .fs-20{
     font-size: var(--fs-clamp-20);
 }
+.fs-22{
+    font-size: var(--fs-clamp-22);
+}
 .fs-32{
     font-size: var(--fs-clamp-32);
 }
+.fs-36{
+    font-size: var(--fs-clamp-36);
+}
+.fs-40{
+    font-size: var(--fs-clamp-40);
+}
+
 .bg-primary {
     background: var(--primary);
 }
@@ -116,6 +135,9 @@ a,a:hover{
 
 .bg-dark {
     background: var(--dark);
+}
+.bg-dark-blue{
+    background: var(--dark-blue);
 }
 
 .bg-muted {
@@ -719,6 +741,37 @@ a,a:hover{
     align-items: center;
     justify-content: center;
 }
+.header-inner-subscription{
+    background:#0D2336;
+}
+.header-inner-subscription .header-content{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.header-inner-subscription .header-title{
+    font-size: var(--fs-clamp-64);
+    font-family: var(--ff-mohave);
+    font-weight: bold;
+    line-height: 1;
+    color: white;
+}
+.header-inner-subscription .subtext{
+    font-size: var(--fs-clamp-20);
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.563);
+}
+.header-inner-subscription .header-img{
+    max-height: 340px;
+    overflow: hidden;
+}
+.header-inner-subscription .header-img img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
 .dashboard_bg{
     background: url('../images/dashboard_bg.png') no-repeat;
     background-size: cover;
@@ -797,6 +850,20 @@ a,a:hover{
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+}
+.list-disclosure-closed{
+    list-style-type: disclosure-closed;
+}
+.list-disc{
+    list-style-type: disc;
+}
+.list-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+.list-horizontal li {
+    margin-right: 40px;
 }
 .list-grid {
     display: grid;
@@ -1407,7 +1474,6 @@ ul.list-grid{
     color: var(--under-review);
 }
 
-
 .scrollTop{
     --shape-size:50px;
     position: fixed;
@@ -1423,4 +1489,80 @@ ul.list-grid{
     border-radius: 100px;
     box-shadow: 0 3px 10px #00000020;
     z-index: 99999;
+}
+
+.efficient_grid{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap:30px;
+    height: 100%;
+}
+.efficient_imgWrapper{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+.title-more-efficient{
+    font-size: var(--fs-clamp-64);
+    font-family: var(--ff-mohave);
+    font-weight: bold;
+    line-height: 1;
+}
+.font-mohave{
+    font-family: var(--ff-mohave);
+}
+.font-primary{
+    font-family: var(--ff-roboto);
+}
+
+.efficient_imgbox{
+    width: 282px;
+    height: 341px;
+    overflow: hidden;
+    box-shadow: 15px 15px 0 #000;
+}
+.efficient_imgbox img{
+    width: 100%;
+    height: 100%;object-fit: cover;
+}
+
+.title-subsc{
+    font-size: var(--fs-clamp-64);
+    font-weight: bold;
+    color: var(--dark-blue);
+    text-transform: uppercase;
+}
+.table-subscriptions{
+    --bs-table-border-color:var(--primary-50);
+}
+.table-subscriptions thead th{
+    text-align: center;
+}
+.table-subscriptions .content{
+    text-align: center;
+}
+
+.table-subscriptions .content .subtext{
+    font-size: 10px;
+}
+.table-subscriptions .icon{
+    width: 30px;
+    margin: auto;
+}
+.table-subscriptions .icon.check{
+    font-size: 20px;
+    color: var(--green);
+}
+.table-subscriptions .icon.none{
+    font-size: 20px;
+    color: var(--red);
+}
+.table-subscriptions .del-price{
+    font-size: 12px;
+}
+.del-price{
+    text-decoration: line-through;
+}
+.table-subscriptions tfoot td{
+    background: var(--primary-20);
 }
