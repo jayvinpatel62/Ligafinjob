@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,
+            user-scalable=0" name="viewport" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="favicon_io/android-chrome-512x512.png"> 
+        <link rel="icon" type="image/png" sizes="192x192" href="favicon_io/android-chrome-192x192.png"> 
+        <link rel="manifest" href="favicon_io/site.webmanifest">
+
+        <title>Index</title>
+
+        <script src="js/jquery.min.js"></script>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/Responsive.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+
+        <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+        <!--------- menu start-->
+        <link rel="stylesheet" type="text/css" href="css/nav-menu.css" />
+        <script src="js/script_nav_menu.js"></script>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+    </head>
+    <body>
+            <!----------------------------  main-menu start ---------------------------->
+            <nav class="nav-main navbar navbar-expand-lg bg-body-light">
+                <div class="container-fluid px-md-5">
+                <a class="navbar-brand logo" href="#">
+                    <img src="images/logo.png" alt="logo.png" class="img-fluid">
+                </a>
+                
+                <div class="right-content order-lg-last">
+                    <div class="right-login  d-flex gap-3">
+                        <a href="#" class="userLogged_in" data-bs-toggle="modal" data-bs-target="#login_Modal">
+                            <i class="bi bi-person-circle"></i>
+                        </a>
+                        <a href="javascript://" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="bi bi-list"></i>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <div class="collapse pe-2 ms-auto navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 " id="navMenus">
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Candidate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Employer</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown children">
+                        <a class="nav-link toggle-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        More
+                        </a>
+                        <ul class="dropdown-menu sub-menu">
+                            <li class="nav-item"><a class="dropdown-item" href="#">Sub menu item 1</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="#">Sub menu item 2</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="#">Sub menu item 3</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="#">Sub menu item 4</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="#">Sub menu item 5</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                </div>
+                
+                </div>
+            </nav>
+            <!---------------------------- main-menu close ---------------------------->
+
+            <!---------------------------- heroSlider_wrapper ---------------------------->
+            <section class="heroSlider_wrapper px-md-5 p-2 pb-0">
+                <!-- Slider main container -->
+                <div class="swiper hero-slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="images/slide-1.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slide-2.png" alt="" class="img-fluid">
+                    </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <!---------------------------- heroSlider_wrapper close ---------------------------->
+           <div class="spacer"></div>
+            <!---------------------------- Job list tabs start ---------------------------->
+           <section class="job-list-wrapper">
+            <div class="container">
+                <ul class="nav nav-tabs nav-home-tab">
+                    <li class="tab-item active"><a href="javascript://" class="nav-link" id="all-tab">All</a></li>
+                    <li class="tab-item"><a href="javascript://" class="nav-link" id="ca-tab">CA</a></li>
+                    <li class="tab-item"><a href="javascript://" class="nav-link" id="cs-tab">CS</a></li>
+                    <li class="tab-item"><a href="javascript://" class="nav-link" id="llb-tab">LLB</a></li>
+                    <li class="tab-item"><a href="javascript://" class="nav-link" id="mba-tab">MBA</a></li>
+                </ul>
+            </div>
+            <div class="hr-primary"></div>
+            <div class="container">
+                <!-- Tab panes -->
+                <div class="tab-content nav-home-tab-content p-md-5 p-3">
+                    <div class="text-center text-md-end">
+                        <a href="#" class="link-primary uppr">Advanced search</a>
+                    </div>
+                    <br>
+                    <div class="tab-pane active" >
+                        <div class="job-list-grid">
+                            <div class="job-item">
+                                <a href="#" class="job-title">Proprietory firm in Audit and Taxation requires Articles</a>
+                                <div class="job-content">
+                                    <div class="coupon-code">
+                                        <div class="c_code">SACA-1588</div>
+                                        <div class="vr"></div>
+                                        <a href="" target="_blank" class="link">Apply</a>
+                                    </div>
+                                    <div class="post-date">
+                                        <span class="postOn">Posted on</span>
+                                        <div class="vr"></div>
+                                        <span class="posdateby">June 12, 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job-item">
+                                <a href="#" class="job-title">Proprietory firm in Audit and Taxation requires Articles</a>
+                                <div class="job-content">
+                                    <div class="coupon-code">
+                                        <div class="c_code">SACA-1588</div>
+                                        <div class="vr"></div>
+                                        <a href="" target="_blank" class="link">Apply</a>
+                                    </div>
+                                    <div class="post-date">
+                                        <span class="postOn">Posted on</span>
+                                        <div class="vr"></div>
+                                        <span class="posdateby">June 12, 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job-item">
+                                <a href="#" class="job-title">Proprietory firm in Audit and Taxation requires Articles</a>
+                                <div class="job-content">
+                                    <div class="coupon-code">
+                                        <div class="c_code">SACA-1588</div>
+                                        <div class="vr"></div>
+                                        <a href="" target="_blank" class="link">Apply</a>
+                                    </div>
+                                    <div class="post-date">
+                                        <span class="postOn">Posted on</span>
+                                        <div class="vr"></div>
+                                        <span class="posdateby">June 12, 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job-item">
+                                <a href="#" class="job-title">Proprietory firm in Audit and Taxation requires Articles</a>
+                                <div class="job-content">
+                                    <div class="coupon-code">
+                                        <div class="c_code">SACA-1588</div>
+                                        <div class="vr"></div>
+                                        <a href="" target="_blank" class="link">Apply</a>
+                                    </div>
+                                    <div class="post-date">
+                                        <span class="postOn">Posted on</span>
+                                        <div class="vr"></div>
+                                        <span class="posdateby">June 12, 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job-item">
+                                <a href="#" class="job-title">Proprietory firm in Audit and Taxation requires Articles</a>
+                                <div class="job-content">
+                                    <div class="coupon-code">
+                                        <div class="c_code">SACA-1588</div>
+                                        <div class="vr"></div>
+                                        <a href="" target="_blank" class="link">Apply</a>
+                                    </div>
+                                    <div class="post-date">
+                                        <span class="postOn">Posted on</span>
+                                        <div class="vr"></div>
+                                        <span class="posdateby">June 12, 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job-item">
+                                <a href="#" class="job-title">Proprietory firm in Audit and Taxation requires Articles</a>
+                                <div class="job-content">
+                                    <div class="coupon-code">
+                                        <div class="c_code">SACA-1588</div>
+                                        <div class="vr"></div>
+                                        <a href="" target="_blank" class="link">Apply</a>
+                                    </div>
+                                    <div class="post-date">
+                                        <span class="postOn">Posted on</span>
+                                        <div class="vr"></div>
+                                        <span class="posdateby">June 12, 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job-item">
+                                <a href="#" class="job-title">Proprietory firm in Audit and Taxation requires Articles</a>
+                                <div class="job-content">
+                                    <div class="coupon-code">
+                                        <div class="c_code">SACA-1588</div>
+                                        <div class="vr"></div>
+                                        <a href="" target="_blank" class="link">Apply</a>
+                                    </div>
+                                    <div class="post-date">
+                                        <span class="postOn">Posted on</span>
+                                        <div class="vr"></div>
+                                        <span class="posdateby">June 12, 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job-item">
+                                <a href="#" class="job-title">Proprietory firm in Audit and Taxation requires Articles</a>
+                                <div class="job-content">
+                                    <div class="coupon-code">
+                                        <div class="c_code">SACA-1588</div>
+                                        <div class="vr"></div>
+                                        <a href="" target="_blank" class="link">Apply</a>
+                                    </div>
+                                    <div class="post-date">
+                                        <span class="postOn">Posted on</span>
+                                        <div class="vr"></div>
+                                        <span class="posdateby">June 12, 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="text-center text-md-end">
+                        <a href="#" class="link-primary uppr">View all openings</a>
+                    </div>
+                </div>
+            </div>
+           </section>
+            <!---------------------------- Job list tabs  close ---------------------------->
+
+            <div class="hr-primary"></div>
+            <br>
+
+            <!---------------------------- top-companies  start ---------------------------->
+            <section class="top-companies-wrapper">
+                <div class="container">
+                    <div class="title-main text-center">
+                        <span>Top</span>
+                        <span class="text-primary">Companies</span>
+                    </div>
+                    <br>
+                    <div class="partners-logos">
+                        <div class="logo-item">
+                            <img src="images/partners/aven.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="logo-item">
+                            <img src="images/partners/circle.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="logo-item">
+                            <img src="images/partners/foxhub.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="logo-item">
+                            <img src="images/partners/hexa.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="logo-item">
+                            <img src="images/partners/ideaa.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="logo-item">
+                            <img src="images/partners/aven.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="logo-item">
+                            <img src="images/partners/circle.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="logo-item">
+                            <img src="images/partners/foxhub.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="logo-item">
+                            <img src="images/partners/hexa.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="logo-item">
+                            <img src="images/partners/ideaa.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            
+            </section>
+            <!-----------------------------  top-companies  close ---------------------------->
+
+             <!---------------------------- guide-to-legafin  start ---------------------------->
+            <section class="guide-to-legafin">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 text-start">
+                            <div class="title-main">
+                                <span>Guide to</span>
+                                <span class="text-underline bold">LegaFin</span>
+                            </div>
+                            <br>
+                            <p class="content">
+                                The brains behind Vahura and Careersanta have come together to create Legafinjobs to take their passion for recruitment to the next level. It is a unique team of CAs and lawyers with more than a decade of expertise in recruitment along with prior experience working in legal, tax, and finance domains with leading organizations. Our vision is to create an efficient and cost-effective platform to revolutionize the job search and hiring process for the legal and finance community.
+                            </p>
+                        </div>
+                        <div class="col-lg-6">
+                            <video class="guide-video" controls>
+                                <object data="https://youtu.be/UfawgQJICU8" type="stream"></object>
+                            </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!---------------------------- guide-to-legafin  close ---------------------------->
+
+           
+
+            <!---------------------------- legal-finance  start ---------------------------->
+            <section class="legal-finance">
+                <div class="container-xl">
+                    <div class="title-main text-center">
+                        <span>Legal & Finance </span>
+                        <span class="text-primary">Events</span>
+                    </div>
+
+                    <br>
+
+                    <div class="row g-3">
+                        <div class="col-lg-6">
+                            <div class="event_item">
+                                <div class="event_img">
+                                    <img src="images/event-1.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="event_content">
+                                    <div class="content_row">
+                                        <div class="ddmmyyyy_left">
+                                            <div class="date">17</div>
+                                            <div class="month">MAR</div>
+                                            <div class="year">2023</div>
+                                        </div>
+                                        <div class="title_decr">
+                                            <h3 class="title">Legal Leadership Conclave’23</h3>
+                                            <p class="normal-text mb-0">Focuses on bringing out techpreneurs working on emerging technologies such .... as loT, AI, ML, Robotics.</p>
+                                        </div>
+                                    </div>
+                                    <br>
+
+                                    <div class="btns_row">
+                                        <a href="" class="btn btn-outline-dark btn-md btn-round">
+                                            <i class="bi bi-geo-alt me-2"></i>Online
+                                        </a>
+                                        <a href="" class="btn btn-dark btn-md btn-round">
+                                            Ended
+                                        </a>
+                                        <a href="" class="btn ms-auto btn-outline-primary fab-md btn-fab">
+                                            <i class="bi bi-share"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="event_item">
+                                <div class="event_img">
+                                    <img src="images/event-2.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="event_content">
+                                    <div class="content_row">
+                                        <div class="ddmmyyyy_left">
+                                            <div class="date">17</div>
+                                            <div class="month">MAR</div>
+                                            <div class="year">2023</div>
+                                        </div>
+                                        <div class="title_decr">
+                                            <h3 class="title">Legal Leadership Conclave’23</h3>
+                                            <p class="normal-text mb-0">Focuses on bringing out techpreneurs working on emerging technologies such .... as loT, AI, ML, Robotics.</p>
+                                        </div>
+                                    </div>
+                                    <br>
+
+                                    <div class="btns_row">
+                                        <a href="" class="btn btn-outline-dark btn-md btn-round">
+                                            <i class="bi bi-geo-alt me-2"></i>Online
+                                        </a>
+                                        <a href="" class="btn btn-dark btn-md btn-round">
+                                            Ended
+                                        </a>
+                                        <a href="" class="btn ms-auto btn-outline-primary fab-md btn-fab">
+                                            <i class="bi bi-share"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!---------------------------- legal-finance  close ---------------------------->
+
+            <!---------------------------- career_testimonial  start ---------------------------->
+            <section class="career_testimonial p-md-5 p-3">
+                <div class="career_testimonial_wrapper">
+                    <div class="row g-5">
+                        <div class="col col-lg-8 col-xl-9">
+                            <div class="title-main text-center">
+                                <span>Career</span>
+                                <span class="text-primary">Blogs</span>
+                            </div>
+                            <br>
+                            <!----------blog swiper start -------->
+                            <div class="swiper blogs_swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                       <div class="blog_item">
+                                            <div class="content">
+                                                <p class="title mb-2">Hiring Activities improved by 24 per cent in September</p>
+                                                <div class="date">
+                                                    October 13, 2022
+                                                </div>
+                                            </div>
+                                            <img src="images/blogs/blog-1.png" alt="" class="img-fluid">
+                                       </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="blog_item">
+                                             <div class="content">
+                                                 <p class="title mb-2">Survey Report on Job Market: Economic Times</p>
+                                                 <div class="date">
+                                                    October 12, 2022
+                                                 </div>
+                                             </div>
+                                             <img src="images/blogs/blog-2.png" alt="" class="img-fluid">
+                                        </div>
+                                     </div>
+                                     <div class="swiper-slide">
+                                        <div class="blog_item">
+                                             <div class="content">
+                                                 <p class="title mb-2">Know the roles of CAs in different Fields/Industries</p>
+                                                 <div class="date">
+                                                     October 13, 2022
+                                                 </div>
+                                             </div>
+                                             <img src="images/blogs/blog-3.png" alt="" class="img-fluid">
+                                        </div>
+                                     </div>
+                                     <div class="swiper-slide">
+                                        <div class="blog_item">
+                                             <div class="content">
+                                                 <p class="title mb-2">Hiring Activities improved by 24 per cent in September</p>
+                                                 <div class="date">
+                                                    August 25, 2022
+                                                 </div>
+                                             </div>
+                                             <img src="images/blogs/blog-1.png" alt="" class="img-fluid">
+                                        </div>
+                                     </div>
+                                     <div class="swiper-slide">
+                                         <div class="blog_item">
+                                              <div class="content">
+                                                  <p class="title mb-2">Hiring Activities improved by 24 per cent in September</p>
+                                                  <div class="date">
+                                                      October 13, 2020
+                                                  </div>
+                                              </div>
+                                              <img src="images/blogs/blog-2.png" alt="" class="img-fluid">
+                                         </div>
+                                      </div>
+                                      <div class="swiper-slide">
+                                         <div class="blog_item">
+                                              <div class="content">
+                                                  <p class="title mb-2">Hiring Activities improved by 24 per cent in September</p>
+                                                  <div class="date">
+                                                      October 13, 2020
+                                                  </div>
+                                              </div>
+                                              <img src="images/blogs/blog-3.png" alt="" class="img-fluid">
+                                         </div>
+                                      </div>
+                                </div>
+                                <br>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <!----------blog swiper close -------->
+                        </div>
+
+                        <div class="col col-lg-4 col-xl-3">
+                            <div class="title-main text-center">
+                                <span>Our</span>
+                                <span class="text-primary">Feedback</span>
+                            </div>
+                            <br>
+                            <!----------testimonial_swiper start -------->
+                            <div class="swiper testimonial_swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                       <div class="testimonial_item">
+                                            <div class="content">
+                                                <p>
+                                                    We have found CareerSanta to be absolutely professional in their work. They have matched up to our expectations in the staff recruitment for our firm. We shall seek their advice and guidance in all our future HR recruitments and other matters.
+                                                </p>
+                                            </div>
+                                            <br>
+                                            <div class="user_profile">
+                                                <div class="user_pic"><img src="https://randomuser.me/api/portraits/men/85.jpg" alt="" class="img-fluid"></div>
+                                                <div class="user_details">
+                                                    <div class="user_name">Piyush Lohia </div>
+                                                    <div class="user_designation">AVP at Kotak Mahindra bank </div>
+                                                </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testimonial_item">
+                                             <div class="content">
+                                                 <p>
+                                                    We have found CareerSanta to be absolutely professional in their work. They have matched up to our expectations in the staff recruitment for our firm. We shall seek their advice and guidance in all our future HR recruitments and other matters.
+                                                 </p>
+                                             </div>
+                                             <br>
+                                             <div class="user_profile">
+                                                 <div class="user_pic"><img src="https://randomuser.me/api/portraits/men/20.jpg" alt="" class="img-fluid"></div>
+                                                 <div class="user_details">
+                                                     <div class="user_name">Piyush Lohia </div>
+                                                     <div class="user_designation">AVP at Kotak Mahindra bank </div>
+                                                 </div>
+                                             </div>
+                                        </div>
+                                     </div>
+                                     <div class="swiper-slide">
+                                        <div class="testimonial_item">
+                                             <div class="content">
+                                                <p>
+                                                    We have found CareerSanta to be absolutely professional in their work. They have matched up to our expectations in the staff recruitment for our firm. We shall seek their advice and guidance in all our future HR recruitments and other matters.
+                                                 </p>
+                                             </div>
+                                             <br>
+                                             <div class="user_profile">
+                                                 <div class="user_pic"><img src="https://randomuser.me/api/portraits/men/66.jpg" alt="" class="img-fluid"></div>
+                                                 <div class="user_details">
+                                                     <div class="user_name">Piyush Lohia </div>
+                                                     <div class="user_designation">AVP at Kotak Mahindra bank </div>
+                                                 </div>
+                                             </div>
+                                        </div>
+                                     </div>
+                                     <div class="swiper-slide">
+                                        <div class="testimonial_item">
+                                             <div class="content">
+                                                <p>
+                                                    We have found CareerSanta to be absolutely professional in their work. They have matched up to our expectations in the staff recruitment for our firm. We shall seek their advice and guidance in all our future HR recruitments and other matters.
+                                                 </p>
+                                             </div>
+                                             <br>
+                                             <div class="user_profile">
+                                                 <div class="user_pic"><img src="https://randomuser.me/api/portraits/men/78.jpg" alt="" class="img-fluid"></div>
+                                                 <div class="user_details">
+                                                     <div class="user_name">Piyush Lohia </div>
+                                                     <div class="user_designation">AVP at Kotak Mahindra bank </div>
+                                                 </div>
+                                             </div>
+                                        </div>
+                                     </div>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <!----------testimonial_swiper close -------->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!---------------------------- career_testimonial  close ---------------------------->
+
+            <footer class="footer-sec">
+                <div class="container">
+                    <div class="row g-3 row-cols-1 row-cols-md-2 row-cols-lg-4">
+                        <div class="col">
+                            <div class="footer_item">
+                                <div class="ft-title">
+                                    JOBS FOR CA
+                                </div>
+                                <div class="ft-links">
+                                <a href="#" class="link">Audit Jobs</a>
+                                <a href="#" class="link">Banking Jobs</a>
+                                <a href="#" class="link">Corporate Finance Jobs </a>
+                                <a href="#" class="link">Direct Tax Jobs</a>
+                                <a href="#" class="link">Due Diligence Jobs</a>
+                                <a href="#" class="link">GST Jobs</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="footer_item">
+                                <div class="ft-title">
+                                    JOBS FOR CS
+                                </div>
+                                <div class="ft-links">
+                                <a href="#" class="link">Advisory Jobs</a>
+                                <a href="#" class="link">Company Law Jobs </a>
+                                <a href="#" class="link">Due Diligence Jobs</a>
+                                <a href="#" class="link">FEMA Jobs</a>
+                                <a href="#" class="link">Litigation Jobs</a>
+                                <a href="#" class="link">Secretarial Jobs</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="footer_item">
+                                <div class="ft-title">
+                                    JOBS FOR LLB
+                                </div>
+                                <div class="ft-links">
+                                <a href="#" class="link">Analyst Jobs</a>
+                                <a href="#" class="link">Due Diligence Jobs </a>
+                                <a href="#" class="link">GST Jobs </a>
+                                <a href="#" class="link">Litigation Jobs</a>
+                                <a href="#" class="link">SEBI Jobs</a>
+                                <a href="#" class="link">Valuation Jobs</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="footer_item">
+                                <div class="ft-title">
+                                    JOBS FOR MBA
+                                </div>
+                                <div class="ft-links">
+                                <a href="#" class="link">Admin Jobs</a>
+                                <a href="#" class="link">Advisory Jobs</a>
+                                <a href="#" class="link">Analyst Jobs</a>
+                                <a href="#" class="link">Education Jobs </a>
+                                <a href="#" class="link">HR Jobs </a>
+                                <a href="#" class="link">Finance Jobs</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="footer-btm-links">
+                        <a href="#" class="link">About Us</a>
+                        <a href="#" class="link">Candidate</a>
+                        <a href="#" class="link">Employer</a>
+                        <a href="#" class="link">Blogs</a>
+                        <a href="#" class="link">Disclaimer</a>
+                        <a href="#" class="link"> Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <!---------- footer bottom close --------------------------------->
+            
+            <!------------------------ Login Register Modal ---------------------------------->
+            <div class="modal modal-tabs fade" id="login_Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x"></i></button>
+
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="Login-tab" data-bs-toggle="tab" data-bs-target="#Login" type="button" role="tab" aria-controls="Login" aria-selected="true">Login</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Register-tab" data-bs-toggle="tab" data-bs-target="#Register" type="button" role="tab" aria-controls="Register" aria-selected="false">Register</button>
+                            </li>
+                        </ul>
+                        
+                        <div class="modal-body">
+                            <div class="verify-div alert alert-primary" >
+                                <h3 class="alert-heading"><i id="" class="bi bi-exclamation-triangle-fill"></i> Verify Your E-mail ID</h3>
+                                <hr>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, aperiam labore ipsam, distinctio suscipit dolor et assumenda, inventore non corporis aspernatur animi quaerat porro tempore praesentium cum repudiandae ea ab!</p>
+                                <a href="javascript://" class="btn btn-primary">Resend Mail</a>
+                            </div>
+                                <div class="tab-content d-none">
+                                    <div class="tab-pane active" id="Login" role="tabpanel" aria-labelledby="Login-tab" tabindex="0">
+                                        <div class="loginDivWrapper">
+                                            <form class="needs-validation" novalidate>
+                                                <div class="mb-3">
+                                                    <input type="email" class="form-control" id="EmailLogin" placeholder="Email" required>
+                                                    <div class="invalid-feedback">
+                                                        Please valid email address.
+                                                    </div>
+                                                </div>
+                                                <div class="input-group mb-3 LoginpassInput">
+                                                    <input type="password" class="form-control"  id="LoginPass" placeholder="Password" aria-label="LoginPass" aria-describedby="basic-addon1" required>
+                                                    <span class="input-group-text passShowHide" id="LoginPass">
+                                                        <i class="bi bi-eye"></i>
+                                                    </span>
+                                                    <div class="invalid-feedback">
+                                                        Invalid Password
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="" id="Remember">
+                                                            <label class="form-check-label" for="Remember">
+                                                                Remember me
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col text-md-end">
+                                                        <a href="javascript://" class="link forgotPasswordLink">Forgot Password?</a>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="text-center">
+                                                    <button type="submit" class="btn btn-primary btn-full">Login</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="forgotPasswordWrapper">
+                                            <div class="text-center mb-3">Lost your password? Please enter your email address.</div>
+                                            <!----- Invalid Email Id tost message -->
+                                            <div  id="InvalidToast" class="toast toast-100 align-items-center text-bg-danger border-0 mb-3" role="alert" aria-live="assertive" aria-atomic="true">
+                                                <div class="toast-header">
+                                                    <strong class="me-auto">EMAIL ID IS NOT VALID</strong>
+                                                    <small class="text-body-secondary">11 mins ago</small>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                                  </div>
+                                                  <div class="toast-body">
+                                                    Given Email ID is not registered with Legafinjobs.Please provide valid Email ID.
+                                                  </div>
+                                            </div>
+                                            <!----- Invalid Email Id tost message close -->
+                                            <!----- valid Email Id tost message -->
+                                            <div  id="validToast" class="toast toast-100 align-items-center text-bg-success border-0 mb-3" role="alert" aria-live="assertive" aria-atomic="true">
+                                                <div class="toast-header">
+                                                    <strong class="me-auto">YOUR PASSWORD SUCCESSFULLY SENT</strong>
+                                                    <small class="text-body-secondary">11 mins ago</small>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                                  </div>
+                                                  <div class="toast-body">
+                                                    Your login and password details have been sent on your E-mail ID.
+                                                  </div>
+                                            </div>
+                                            <!----- valid Email Id tost message close -->
+                                            <div class="mb-3">
+                                                <input type="email" class="form-control" id="EmailRgister" placeholder="Email" required>
+                                                <div class="invalid-feedback">
+                                                    Please valid email address.
+                                                </div>
+                                            </div>
+                                            <div class="text-center mb-3">
+                                                <button type="submit" class="btn btn-primary btn-full" id="liveToastBtn">Send Now</button>
+                                            </div>
+                                            <div class="text-center">
+                                               <a href="javascript://" class="link link-primary backToLogin">Back to login</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="Register" role="tabpanel" aria-labelledby="Register-tab" tabindex="0">
+                                        <form class="needs-validation" novalidate>
+                                            <div class="mb-3">
+                                                <input type="email" class="form-control" id="EmailRgister" placeholder="Email" required>
+                                                <div class="invalid-feedback">
+                                                    Please valid email address.
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <input type="password" class="form-control" id="passwordRegister" placeholder="Password" required>
+                                                <div class="invalid-feedback">
+                                                    Please valid email address.
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="row">
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" id="FullName" placeholder="Full Name" required>
+                                                    <div class="valid-feedback">
+                                                        Looks good!
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <input type="text" class="form-control" id="Mobile" placeholder="Mobile" required>
+                                                    <div class="invalid-feedback">
+                                                        Please valid Mobile Number
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control" id="PromoCode" placeholder="Promo Code/Reference" >
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="accept-terms" required>
+                                                <label  class="form-check-label" for="accept-terms">
+                                                    I agree to the <a href="/Disclaimer.aspx" target="_blank" tabindex="-1">Terms</a>
+                                                </label>
+                                                <div class="invalid-feedback">
+                                                    You must agree before submitting.
+                                                </div>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="interested">
+                                                <label  class="form-check-label" for="interested">
+                                                    Are you interested to participate in our Job Fairs & Workshops?
+                                                </label>
+                                            </div>
+                                            <br>
+                                            <div class="text-center">
+                                                <button type="submit" class="btn btn-primary btn-full">Create Account</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!------------------------ Login Register Modal close ---------------------------------->
+
+            <a href="javascript://" class="scrollTop"><i class="bi bi-chevron-up"></i></a>
+
+            <!---------------------------- Preloader start ---------------------------->
+            <script src="js/plugins/preloader.js"></script>
+
+            <div id="preloader">
+                <lottie-player id="status"
+                    src="https://assets9.lottiefiles.com/packages/lf20_f1dhzsnx.json"
+                    background="transparent" speed="3" style="width: 200px; height:
+                    200px;" loop autoplay></lottie-player>
+            </div>
+            
+            <!---------------------------- Preloader close ---------------------------->
+
+
+            <!-- script start -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+            <script src="js/validation.js"></script>
+
+            <!-- swiper js library -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+            <script type="module">
+                import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+                </script>
+            <script src="js/script_swiper.js"></script>
+            <!-- swiper js library end -->
+            
+            <!--Common script -->
+            <script src="js/script.js"></script>
+            <script src="https://cdn.jsdelivr.net/gh/thelevicole/youtube-to-html5-loader@4.0.0/dist/YouTubeToHtml5.js"></script>
+            <script>new YouTubeToHtml5();</script>
+    </body>
+</html>
