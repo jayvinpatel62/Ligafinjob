@@ -1881,10 +1881,53 @@ a.blog-item:hover .title .arrow i{
     object-fit: cover;
 }
 
-
+.joblist-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
 .aside-filter-wrapper{
     position: sticky;
     top: 100px;
+}
+
+.filter-header-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    top: 75px;
+    width: 100%;
+    z-index: 2;
+    margin-bottom: 20px;
+    background: white;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.aside-filter-wrapper.mobile {
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    top: auto;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0px -4px 28px 0px rgba(0, 0, 0, 0.25);
+}
+
+.filter-title
+{
+    display: flex;
+    align-items: center;
+}
+.filter-close{
+    color: var(--dark);
+    font-size: 30px;
+    align-items: center;
 }
 .job-list-item-row{
     display: flex;
@@ -1900,8 +1943,12 @@ a.blog-item:hover .title .arrow i{
     background: var(--light);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin-bottom: 20px;
+    transition: all 0.35s ease-in-out;
 }
-
+.job-list-item:hover{
+    background: var(--white);
+    box-shadow: 0px 4px 28px 0px rgba(0, 0, 0, 0.25);
+}
 .Job-title{
     font-size: var(--fs-clamp-20);
     font-weight: bold;
@@ -1969,4 +2016,50 @@ a.blog-item:hover .title .arrow i{
 .btns-group{
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(140px, 1fr) );
+}
+.table-advisory td{
+    padding: 20px;
+}
+.img-td{
+    width: 150px;
+    background-color: #0B4999;
+}
+.img-advisory{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+    object-fit: cover;
+    
+}
+.link-dark{
+    transition: all 0.35s ease-in-out;
+}
+.link-dark:hover{
+    color: var(--primary) !important;
+}
+.sticky-top{
+    position: sticky;
+    top: 115px;
+}
+.scroller-checkitems::-webkit-scrollbar {
+    width: 3px;
+}
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: var(--primary);
 }
