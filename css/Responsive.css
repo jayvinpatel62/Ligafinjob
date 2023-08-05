@@ -29,6 +29,9 @@
     justify-content: center;
   }
    
+  .applicant_tabs .nav-item,.applicant_tabs .nav-item .nav-link{
+    width: 100%;
+  }
   
 }
 @media (width >= 576px){
