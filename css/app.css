@@ -967,9 +967,15 @@ a,a:hover{
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: var(--normal-text);
-    color: var(--muted);
+    font-size: var(--fs-clamp-14);
+    color: var(--dark);
    
+}
+.text_with_icon.muted{
+    color: var(--muted);
+}
+.text_with_icon.small{
+    font-size: var(--normal-text);
 }
 
 .auto-fill{
@@ -2035,8 +2041,11 @@ a.blog-item:hover .title .arrow i{
 .link-dark{
     transition: all 0.35s ease-in-out;
 }
-.link-dark:hover{
+.link-dark:hover,.link-dark-blue:hover{
     color: var(--primary) !important;
+}
+.link-dark-blue{
+    color: var(--dark-blue);
 }
 .sticky-top{
     position: sticky;
@@ -2044,6 +2053,9 @@ a.blog-item:hover .title .arrow i{
 }
 .scroller-checkitems::-webkit-scrollbar {
     width: 3px;
+}
+.whatsapp-color{
+    color: var(--green);
 }
 ::-webkit-scrollbar {
     width: 6px;
