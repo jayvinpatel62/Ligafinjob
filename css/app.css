@@ -2075,3 +2075,10 @@ background: #888;
 ::-webkit-scrollbar-thumb:hover {
 background: var(--primary);
 }
+.viewProfile-modal .modal-body{
+    overflow: hidden;
+}
+.iframeViewProfile{
+    width: 100%;
+    height: 100%;
+}

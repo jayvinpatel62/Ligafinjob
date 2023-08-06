@@ -1168,7 +1168,7 @@
                             <span style="display:none;"></span><input name="ctl00$ContentPlaceHolder1$ucListView$hdnID29223" type="hidden" id="ctl00_ContentPlaceHolder1_ucListView_hdnID29223" value="MjkyMjM=-d7lMCt7X+RA="></td>
                             <td>
                                 <div class="table-action-tools">
-                                    <a href="javascript://" class="btn btn-fab fab-sm btn-light"  title="View Jobseeker"><i class="bi bi-eye-fill"></i></a>
+                                    <a href="javascript://" class="btn btn-fab fab-sm btn-light" data-bs-toggle="modal" data-bs-target="#viewProfile-modal"  title="View Jobseeker"><i class="bi bi-eye-fill"></i></a>
                                     <a href="javascript://" class="btn btn-fab fab-sm btn-light"  title="View CV" ><i class="bi bi-newspaper"></i></a>
                                 </div>
                             </td>
@@ -1263,6 +1263,27 @@
                     </div>
                 </div>
             </div>
+
+
+            <!---------------------------- view profile modal start ---------------------------->
+            <div class="modal fade viewProfile-modal" id="viewProfile-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">View Profile</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <iframe src="view_profile.html" class="iframeViewProfile" frameborder="0"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!---------------------------- view profile modal close ---------------------------->
 
             <!---------------------------- Preloader start ---------------------------->
             <script src="js/plugins/preloader.js"></script>
