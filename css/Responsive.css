@@ -245,6 +245,13 @@ body.show-filter{
   .filter-header-mobile{
     display: none;
   }
+  .infoItem{
+    grid-template-columns: 0.5fr 1fr;
+  }
+  .infoItem .infoRight .content{
+    padding: 10px 20px;
+    border-left: 4px solid var(--light);
+  }
 }
 @media (width <= 767px){
   .nav-home-tab .tab-item{
