@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,
+            user-scalable=0" name="viewport" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="favicon_io/android-chrome-512x512.png"> 
+        <link rel="icon" type="image/png" sizes="192x192" href="favicon_io/android-chrome-192x192.png"> 
+        <link rel="manifest" href="favicon_io/site.webmanifest">
+
+        <title>Event Detail page</title>
+
+        <script src="js/jquery.min.js"></script>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/Responsive.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+
+        <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+        <!--------- menu start-->
+        <link rel="stylesheet" type="text/css" href="css/nav-menu.css" />
+        <script src="js/script_nav_menu.js"></script>
+
+        <!--------- Fancy Gallery Plugin start-->
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+        />
+        <!--------- Fancy Gallery Plugin Close-->
+
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+    </head>
+    <body>
+            <!----------------------------  main-menu start ---------------------------->
+            <nav class="nav-main navbar navbar-expand-lg bg-body-light">
+                <div class="container-fluid px-md-5">
+                <a class="navbar-brand logo" href="#">
+                    <img src="images/logo.png" alt="logo.png" class="img-fluid">
+                </a>
+                
+                <div class="right-content order-lg-last">
+                    <div class="right-login  d-flex gap-3">
+                        <a href="#" class="userloginregister">
+                            <i class="bi bi-person-circle"></i>
+                        </a>
+                        <a href="javascript://" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="bi bi-list"></i>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <div class="collapse pe-2 ms-auto navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 " id="navMenus">
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Candidate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Employer</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown children">
+                        <a class="nav-link toggle-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        More
+                        </a>
+                        <ul class="dropdown-menu sub-menu">
+                            <li class="nav-item"><a class="dropdown-item" href="#">Sub menu item 1</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="#">Sub menu item 2</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="#">Sub menu item 3</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="#">Sub menu item 4</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="#">Sub menu item 5</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                </div>
+                
+                </div>
+            </nav>
+            <!---------------------------- main-menu close ---------------------------->
+
+            <!---------------------------- Header Inner start---------------------------->
+            <header class="header-inner">
+                <div class="p-5 text-center">
+                    <div class="title-64 bold">Details of class / course / Mentors</div>
+                    <div class="subtext fs-32">Your search engine for coaching classes/ private tuitions/ specialized training for professional courses</div>
+                </div>
+            </header>
+            <!---------------------------- Header Inner close ---------------------------->
+
+            <!---------------------------- offset_wrapper ---------------------------->
+            <section class="p-2 p-md-4">
+                <div class="container">
+                    <div class="text-center">
+                        <a href="" class="btn btn-primary"><i class="bi bi-eye me-2"></i> View all posts</a>
+                    </div>
+                    <br>
+                    <div class="link-broder-box">
+                        <a href="#" class="link-dark fs-24 bold" target="_blank">
+                            Enrol for any paid courses on Learning Hub and get legafinjobs's select Resume Enhancement Services for FREE. Whatsapp on 8080807378 to avail the same.
+                        </a>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <!---------- left sidebar content start ----------------->
+                        <aside class="col-12 col-lg-3">
+                            <div class="sidebar_in">
+                                <a href="javascript://" class="btn btn-dark">Enquiry Now</a>
+                                <br>
+                                <br>
+                                <ul class="list list-grid no-bullet">
+                                    <li class="item">
+                                        <b class="fs-18 bold">
+                                            Organizer:
+                                        </b>
+                                        <div>Practice League</div>
+                                    </li>
+                                    <li class="item">
+                                        <b class="fs-18 bold">
+                                            Nature of Learning:
+                                        </b>
+                                        <div>Award Ceremony</div>
+                                    </li>
+                                    <li class="item">
+                                        <b class="fs-18 bold">
+                                            Date:
+                                        </b>
+                                        <div>17th March 2023</div>
+                                    </li>
+                                    <li class="item">
+                                        <b class="fs-18 bold">
+                                            Time:
+                                        </b>
+                                        <div>4pm-8pm</div>
+                                    </li>
+                                    <li class="item">
+                                        <b class="fs-18 bold">
+                                            Mode:
+                                        </b>
+                                        <div>Offline</div>
+                                    </li>
+                                    <li class="item">
+                                        <b class="fs-18 bold">
+                                            Location:
+                                        </b>
+                                        <div>Worli</div>
+                                    </li>
+                                    <li class="item">
+                                        <b class="fs-18 bold">
+                                            Contact Us:
+                                        </b>
+                                        <div>9865743***  </div>
+                                    </li>
+                                    <li class="item">
+                                        <b class="fs-18 bold">
+                                            Who can attend this?
+                                        </b>
+                                        <div>CA qualified</div>
+                                    </li>
+                                    <li class="item">
+                                        <b class="fs-18 bold">
+                                            Upcoming Event
+                                        </b>
+                                        <div>None</div>
+                                    </li>
+                                </ul>
+                                <a href="javascript://" class="btn btn-success">Register Now</a>
+                            </div>
+                        </aside>
+                        <!---------- left sidebar content start ----------------->
+                        <!---------- middle content start ----------------->
+                        <div class="col-12 col-lg-9 content_left">
+                            <div class="content">
+                                <h4 class="bg-dark text-white fs-24 p-2">Benchmarx Academy for CA coaching</h4>
+                                <p>
+                                    We at Benchmarx believe that knowledge is the key to success in this fiercely competitive job market. Our training methodology is streamlined not only to provide a detailed coverage of the course content and prepare students to succeed in globally competitive examinations but also train them to practically apply theoretical concepts and be a better fit in the financial industry.
+                                </p>
+                                <b>Our USP includes -</b>
+                                
+                                <ul class="list list-column">
+                                    <li>Healthy mix of professionals with relevant industry experience and strong academic background in CAs, CFAs and MBAs from top B-schools including rank holders as faculty members.</li>
+                                    <li>Small batch size for personalised coaching and individual attention</li>
+                                    <li>Timely completion with sufficient time for self preparation</li>
+                                    <li>Regular tests and continuous monitoring of student progress</li>
+                                    <li>Unique student friendly approach wherein the faculty members can be contacted directly by the students to get their queries addressed</li>
+                                    <li>Teaching methodology with emphasis on in-depth conceptual clarity and problem solving.</li>
+                                </ul>
+                            </div>
+                            <br>
+                           
+                            <div class="fs-20 bold mb-2">
+                                Photos
+                            </div>
+                            <div class="photos-gallery grid_thumbs">
+                                <a href="https://images.unsplash.com/photo-1684620862329-7682065bd65f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1M3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60" class="thumb" data-fancybox="photo-gallery" data-caption="photo">
+                                    <img src="https://images.unsplash.com/photo-1684620862329-7682065bd65f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1M3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="" class="img-fluid">
+                                </a>
+                                <a href="https://images.unsplash.com/photo-1682685797229-b2930538da47?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw1NHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60" class="thumb" data-fancybox="photo-gallery" data-caption="photo">
+                                    <img src="https://images.unsplash.com/photo-1682685797229-b2930538da47?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw1NHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="" class="img-fluid">
+                                </a>
+                                <a href="https://images.unsplash.com/photo-1534196012057-d9a0c7cfa5ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1Nnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60" class="thumb" data-fancybox="photo-gallery" data-caption="photo">
+                                    <img src="https://images.unsplash.com/photo-1534196012057-d9a0c7cfa5ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1Nnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="" class="img-fluid">
+                                </a>
+                                <a href="https://images.unsplash.com/photo-1682687982046-e5e46906bc6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2Mnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60" class="thumb" data-fancybox="photo-gallery" data-caption="photo">
+                                    <img src="https://images.unsplash.com/photo-1682687982046-e5e46906bc6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2Mnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="" class="img-fluid">
+                                </a>
+                                <a href="https://images.unsplash.com/photo-1689788929647-ff2326f2e183?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60" class="thumb" data-fancybox="photo-gallery" data-caption="photo">
+                                    <img src="https://images.unsplash.com/photo-1689788929647-ff2326f2e183?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="" class="img-fluid">
+                                </a>
+                                <a href="https://images.unsplash.com/photo-1689267305146-155a1459752c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2Nnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60" class="thumb" data-fancybox="photo-gallery" data-caption="photo">
+                                    <img src="https://images.unsplash.com/photo-1689267305146-155a1459752c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2Nnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="" class="img-fluid">
+                                </a>
+                                <a href="https://images.unsplash.com/photo-1684620862329-7682065bd65f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1M3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60" class="thumb" data-fancybox="photo-gallery" data-caption="photo">
+                                    <img src="https://images.unsplash.com/photo-1684620862329-7682065bd65f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1M3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="" class="img-fluid">
+                                </a>
+                                <a href="https://images.unsplash.com/photo-1682685797229-b2930538da47?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw1NHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60" class="thumb" data-fancybox="photo-gallery" data-caption="photo">
+                                    <img src="https://images.unsplash.com/photo-1682685797229-b2930538da47?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw1NHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="" class="img-fluid">
+                                </a>
+                                <a href="https://images.unsplash.com/photo-1534196012057-d9a0c7cfa5ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1Nnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60" class="thumb" data-fancybox="photo-gallery" data-caption="photo">
+                                    <img src="https://images.unsplash.com/photo-1534196012057-d9a0c7cfa5ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1Nnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="" class="img-fluid">
+                                </a>
+                                <a href="https://images.unsplash.com/photo-1682687982046-e5e46906bc6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2Mnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60" class="thumb" data-fancybox="photo-gallery" data-caption="photo">
+                                    <img src="https://images.unsplash.com/photo-1682687982046-e5e46906bc6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2Mnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="" class="img-fluid">
+                                </a>
+                                <a href="https://images.unsplash.com/photo-1689788929647-ff2326f2e183?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60" class="thumb" data-fancybox="photo-gallery" data-caption="photo">
+                                    <img src="https://images.unsplash.com/photo-1689788929647-ff2326f2e183?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="" class="img-fluid">
+                                </a>
+                                <a href="https://images.unsplash.com/photo-1689267305146-155a1459752c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2Nnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60" class="thumb" data-fancybox="photo-gallery" data-caption="photo">
+                                    <img src="https://images.unsplash.com/photo-1689267305146-155a1459752c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2Nnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <br>
+                            <div class="fs-20 bold mb-2">
+                                Videos
+                            </div>
+                            <div class="video-gallery grid_thumbs">
+                                <a href="https://www.youtube.com/watch?v=4FUnXaq_VWk" class="thumb" data-fancybox="Video-gallery" data-caption="video">
+                                    <img src="http://i3.ytimg.com/vi/4FUnXaq_VWk/hqdefault.jpg" alt="" class="img-fluid">
+                                </a>
+                                <a href="https://vimeo.com/843919870" class="thumb" data-fancybox="Video-gallery" data-caption="video">
+                                    <img src="https://i.vimeocdn.com/video/1697332569-b3db803cc45fe71f592d972a7a8b3f30a8fd41ab4660168139b7f0bed586723e-d?mw=960&mh=540" alt="" class="img-fluid">
+                                </a>
+                                <a href="https://vimeo.com/76979871" class="thumb" data-fancybox="Video-gallery" data-caption="video">
+                                    <img src="https://i.vimeocdn.com/video/452001751-8216e0571c251a09d7a8387550942d89f7f86f6398f8ed886e639b0dd50d3c90-d_260x163" alt="" class="img-fluid">
+                                </a>
+                                <a href="https://vimeo.com/843191452" class="thumb" data-fancybox="Video-gallery" data-caption="video">
+                                    <img src="https://i.vimeocdn.com/video/1694678553-db77b86dc05a69f714a1703489264185c67e4296a6e6c4ae6e6a1cae2086e7bb-d?mw=1100&mh=580" alt="" class="img-fluid">
+                                </a>
+                                <a href="https://vimeo.com/844876479" class="thumb" data-fancybox="Video-gallery" data-caption="video">
+                                    <img src="https://i.vimeocdn.com/video/1697206369-9832b6e13ef23d6e3e44f616caafb7dbdbc486d00382d30b463b5b9e6f89bc59-d?mw=800&mh=600" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="fs-20 bold mb-2">
+                                Website & Social Media Link
+                            </div>
+                            <div class="social-icons">
+                                <a href="javascript://" class="icon fabebook">
+                                    <img src="images/Social_media/facebook.png" alt="" class="img-fluid">
+                                </a>
+                                <a href="javascript://" class="icon whatsapp">
+                                    <img src="images/Social_media/whatsapp.png" alt="" class="img-fluid">
+                                </a>
+                                <a href="javascript://" class="icon twitter">
+                                    <img src="images/Social_media/twitter.png" alt="" class="img-fluid">
+                                </a>
+                                <a href="javascript://" class="icon instagram">
+                                    <img src="images/Social_media/instagram.png" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="fs-20 bold mb-2">
+                                Reviews
+                            </div>
+                            <div class="reviewsWrapper">
+                                <ul class="reviewsList no-bullet">
+                                    <li class="reviewsList-item">
+                                        <div class="reviewItem">
+                                            <div class="reviewHead">
+                                                <h4 class="UserName">Vaibhavi Mhatre - MAY'15 IPCC</h4>
+                                                <div class="date">February 19, 2016</div>
+                                            </div>
+                                            <div class="reviewContent">
+                                                <p>
+                                                    How do I start with, being a student at Benchmark was a very memorable and wonderful experience. Be it the teaching, the fun we had with you all, the knowledge that we gained, the friends we made, the constant support you’ll gave us not only helped me in my exam, but has made me a better person than who I was before.
+                                                </p>
+                                                <p>
+                                                    BHAVIK SIR, was an excellent motivator, a very dynamic personality, it was always like learning something new whenever he shared his experience with us.
+ANKUSH SIR, always made us feel that he was someone like us, he was very friendly, kind and helpful… and I will miss his jokes! : P
+                                                </p>
+                                                <p>
+                                                    JAY SIR, was the one who gave us the most needed reality checks! Which were actually necessary He always encouraged us to learn new things and it was great getting to know things from him.
+                                                </p>
+                                                <p>Together, it was a pleasure learning from a great trio, “Good teachers teach from the heart not the book!!!” Thank you so much for helping us achieve our goals and being such great mentors and teachers!</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="reviewsList-item">
+                                        <div class="reviewBox">
+                                            <div class="reviewHead">
+                                                <h4 class="UserName">CA Mit Parekh May’16 CA Final</h4>
+                                                <div class="date">October 20, 2016</div>
+                                            </div>
+                                            <div class="reviewContent">
+                                                <p>
+                                                    Dear Jay Sir,
+                                                </p>
+                                                <p>
+                                                    Thanks a lot for your help and support without which becoming CA was next to impossible And to get 85 in accounts is surely unbelievable! Really grateful to you for motivating me to work that extra bit, mentor and guide like you! Thanks for all the support
+                                                </p>
+                                                <p>
+                                                    Dear Bhavik Sir,
+                                                </p>
+                                                <p>
+                                                    Dear Ankush Sir,
+                                                </p>
+                                                <p>Thank you for all the motivation and getting 88 in costing was out of the world. Thanks for support and guidance.</p>
+                                                <p>
+                                                    Without 3 of you, getting ‘CA’ prefix would have been really difficult. Thank you for everything.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="spacer"></div>
+                            <div class="fs-20 bold mb-2">
+                                Leave a Review
+                            </div>
+                            <div class="p-3">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name<span class="required">*</span></label>
+                                    <input type="text" class="form-control" id="name" placeholder="Name *">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email<span class="required">*</span></label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email ID *">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Comment" class="form-label">Comment<span class="required">*</span></label>
+                                    <textarea id="Comment" cols="20" rows="6" class="form-control" placeholder="Please provide the review of this coaching classes/ private tuitions/ course in 25 to 100 words. You should mention whether you are a current or past student, course for which you joined, year in which you appeared, subjects which you joined, your experience in general or about any specific professor, subject, your recommendation to other students, etc."></textarea>
+                                </div>
+                                <br>
+                                <a href="javascript://" class="btn btn-success">Send</a>
+                            </div>
+                        </div>
+                        <!---------- middle content end ----------------->
+                    </div>
+                </div>
+            </section>
+            <!---------------------------- offset_wrapper close ---------------------------->
+           <div class="spacer"></div>
+         
+            <footer class="footer-sec">
+                <div class="container">
+                    <div class="row g-3 row-cols-1 row-cols-md-2 row-cols-lg-4">
+                        <div class="col">
+                            <div class="footer_item">
+                                <div class="ft-title">
+                                    JOBS FOR CA
+                                </div>
+                                <div class="ft-links">
+                                <a href="#" class="link">Audit Jobs</a>
+                                <a href="#" class="link">Banking Jobs</a>
+                                <a href="#" class="link">Corporate Finance Jobs </a>
+                                <a href="#" class="link">Direct Tax Jobs</a>
+                                <a href="#" class="link">Due Diligence Jobs</a>
+                                <a href="#" class="link">GST Jobs</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="footer_item">
+                                <div class="ft-title">
+                                    JOBS FOR CS
+                                </div>
+                                <div class="ft-links">
+                                <a href="#" class="link">Advisory Jobs</a>
+                                <a href="#" class="link">Company Law Jobs </a>
+                                <a href="#" class="link">Due Diligence Jobs</a>
+                                <a href="#" class="link">FEMA Jobs</a>
+                                <a href="#" class="link">Litigation Jobs</a>
+                                <a href="#" class="link">Secretarial Jobs</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="footer_item">
+                                <div class="ft-title">
+                                    JOBS FOR LLB
+                                </div>
+                                <div class="ft-links">
+                                <a href="#" class="link">Analyst Jobs</a>
+                                <a href="#" class="link">Due Diligence Jobs </a>
+                                <a href="#" class="link">GST Jobs </a>
+                                <a href="#" class="link">Litigation Jobs</a>
+                                <a href="#" class="link">SEBI Jobs</a>
+                                <a href="#" class="link">Valuation Jobs</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="footer_item">
+                                <div class="ft-title">
+                                    JOBS FOR MBA
+                                </div>
+                                <div class="ft-links">
+                                <a href="#" class="link">Admin Jobs</a>
+                                <a href="#" class="link">Advisory Jobs</a>
+                                <a href="#" class="link">Analyst Jobs</a>
+                                <a href="#" class="link">Education Jobs </a>
+                                <a href="#" class="link">HR Jobs </a>
+                                <a href="#" class="link">Finance Jobs</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="footer-btm-links">
+                        <a href="#" class="link">About Us</a>
+                        <a href="#" class="link">Candidate</a>
+                        <a href="#" class="link">Employer</a>
+                        <a href="#" class="link">Blogs</a>
+                        <a href="#" class="link">Disclaimer</a>
+                        <a href="#" class="link"> Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <!---------------------------- Preloader start ---------------------------->
+            <script src="js/plugins/preloader.js"></script>
+
+            <div id="preloader">
+                <lottie-player id="status"
+                    src="https://assets9.lottiefiles.com/packages/lf20_f1dhzsnx.json"
+                    background="transparent" speed="3" style="width: 200px; height:
+                    200px;" loop autoplay></lottie-player>
+            </div>
+            <!---------------------------- Preloader close ---------------------------->
+
+
+            <!-- script start -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+            
+
+            <!-- swiper js library -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+            <script type="module">
+                import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+                </script>
+            <script src="js/script_swiper.js"></script>
+            <!-- swiper js library end -->
+            
+            <!--Common script -->
+            <script src="js/script.js"></script>
+            <script src="https://cdn.jsdelivr.net/gh/thelevicole/youtube-to-html5-loader@4.0.0/dist/YouTubeToHtml5.js"></script>
+            <script>new YouTubeToHtml5();</script>
+
+            <script>
+                 Fancybox.bind("[data-fancybox]", {
+                  // Your custom options
+                });
+                Fancybox.bind('[data-fancybox="Video-gallery"]', {
+                  // Your custom options
+                });
+            </script>
+    </body>
+</html>
