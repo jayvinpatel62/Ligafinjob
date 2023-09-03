@@ -2289,3 +2289,34 @@ background: var(--primary);
 .infoItem .infoRight .content{
     width: 100%;
 }
+.features{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    gap: 15px;
+}
+.featureItem{
+    text-align: center;
+   padding: 20px;
+}
+.featureItem .title{
+    font-size: var(--fs-clamp-18);
+}
+.icon-circle-brdr{
+    display: inline-block;
+    --featureIconCircle:90px;
+    width: var(--featureIconCircle);
+    height: var(--featureIconCircle);
+    border-radius:var(--featureIconCircle);
+    border: 5px solid var(--light);
+    padding: 2px;
+    margin-bottom: 10px;
+}
+.icon-circle-inn{
+    width: 100%;
+    height:100%;
+    border-radius:var(--featureIconCircle);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--light);
+}
