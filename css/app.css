@@ -905,13 +905,13 @@ a,a:hover{
     
 }
 .border-gray{
-    border: 0.8px solid var(--gray-50);
+    border: 0.8px solid var(--bs-border-color);
 }
 .white_box_border,.white-box-border{
     position: relative;
     padding: 50px;
     background:var(--bg-white);
-    border: 1px solid var(--gray-50);
+    border: 1px solid var(--bs-border-color);
 }
 .border-radius-10{
     border-radius:10px !important;
@@ -2342,4 +2342,45 @@ background: var(--primary);
 .logoItem .logoTitle{
     font-size: var(--fs-clamp-14);
     font-weight: bold;
+}
+.imgSidebar-Grid{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
+}
+.imgSidebar-Grid .imgSidebarItem{
+    height: 100%;
+}
+a.imgSidebarItem{
+    display: block;
+}
+.imgSidebarItem{
+    text-decoration: none;
+    position: relative;
+    padding: 15px;
+    background: var(--bg-white);
+    border: 1px solid var(--bs-border-color);
+    /* box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25); */
+    border-radius: 15px;
+    color: var(--dark);
+    margin-bottom: 15px;
+    transition: all 0.35s ease-in-out;
+}
+.imgSidebarItem .img{
+    height: 150px;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.imgSidebarItem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.imgSidebarItem .content{
+    font-size: var(--fs-clamp-18);
+}
+a.imgSidebarItem:hover{
+    background: var(--primary);
+    color: var(--white);
 }
