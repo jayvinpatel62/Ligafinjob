@@ -2387,3 +2387,56 @@ a.imgSidebarItem:hover{
     background: var(--primary);
     color: var(--white);
 }
+
+.testimonialListWrapper,.testimonialListWrapper ul{
+    list-style: none;
+    padding: 0;
+}
+.testimonialListWrapper li{
+
+}
+.testimonialItem{
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 20px;
+    padding: 20px;
+    border-radius:20px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+}
+.testimonialItem .userPic{
+    flex-shrink: 0;
+    --pic-size:90px;
+    width: var(--pic-size);
+    height: var(--pic-size);
+    border-radius: var(--pic-size);
+    overflow: hidden;
+}
+.testimonialItem .userPic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.testimonialItem  .content{
+    color: var(--dark);
+    font-size: var(--fs-clamp-16);
+}
+.userNameNdesignation
+{
+    display:flex ;
+    align-items: center;
+    gap: 7px;
+}
+.userNameNdesignation .designation{
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: var(--gray);
+    font-size: var(--fs-clamp-12);
+}
+.userNameNdesignation .name:after{
+    position: relative;
+    content: '|';
+    font-size: 14px;
+    margin-left: 7px;
+}
