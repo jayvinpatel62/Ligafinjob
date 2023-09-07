@@ -548,6 +548,9 @@ a,a:hover{
 {
     padding: 30px 0;
 }
+.event_swiper .swiper-slide{
+    padding:20px;
+}
 .event_item{
     display: flex;
     align-items: center;

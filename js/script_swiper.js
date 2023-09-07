@@ -60,3 +60,23 @@ var testimonialSwiper = new Swiper('.testimonial_swiper', {
   navigation: false
 });
 
+var eventSwiper = new Swiper('.event_swiper', {
+  direction: 'horizontal',
+  slidesPerView: 1,
+  centeredSlides: false,
+  effect:'slide',
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    1040: {
+      slidesPerView: 2,
+    }
+  },
+  navigation: false
+});
