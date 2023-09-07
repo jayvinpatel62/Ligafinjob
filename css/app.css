@@ -2427,6 +2427,7 @@ a.imgSidebarItem:hover{
     display:flex ;
     align-items: center;
     gap: 7px;
+    flex-wrap: wrap;
 }
 .userNameNdesignation .designation{
     padding: 5px 10px;
