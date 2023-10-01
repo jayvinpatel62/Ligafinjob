@@ -2292,6 +2292,85 @@ background: var(--primary);
 .infoItem .infoRight .content{
     width: 100%;
 }
+
+/*-------- event item css---*/
+.event-list-wrapper{
+    padding: 0;
+    list-style: none;
+}
+
+a.eventItem{
+    text-decoration: none;
+    color: var(--dark);
+}
+.eventItem{
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 0;
+    overflow: hidden;
+    border-bottom: 1px solid var(--gray) !important;
+    transition: all 0.25s linear;
+}
+.eventItem:hover{
+    box-shadow: 0 2px 12px #00000030;
+}
+.eventItem img,.eventItem a{
+    transition: all 0.20s ease-in-out;
+}
+
+.eventItem .divImgsection{
+    /* background: var(--light); */
+    /* padding: 20px; */
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    
+}
+
+.eventItem .img-holder{
+    width: 140px;
+    height: 130px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 0 #ccc;
+    border: 2px solid #fff;
+    overflow: hidden;
+}
+.eventItem .img-holder img{
+    width: 100%;
+    height: 100%;
+   object-fit: cover;
+   transform: scale(1);
+}
+.eventItem:hover .img-holder img{
+    transform: scale(1.15);
+}
+.eventItem .title{
+    font-size: var(--fs-clamp-16);
+    color: var(--dark);
+}
+.eventItem:hover .title{
+    color: var(--primary);
+}
+.eventItem .divInnerContent{
+    background: var(--white);
+    /* padding: 20px; */
+    display: flex;
+    align-items: center;
+}
+.eventItem .divInnerContent .blockquote{
+    font-size: var(--fs-clamp-14);
+}
+
+.eventItem .divInnerContent .content{
+    width: 100%;
+}
+/*-------- event item css end---*/
 .features{
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );

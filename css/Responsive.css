@@ -252,6 +252,12 @@ body.show-filter{
     padding: 10px 20px;
     border-left: 4px solid var(--light);
   }
+  .eventItem{
+    grid-template-columns: 0.4fr 1fr auto;
+  }
+  .eventItem .divInnerContent .content{
+    padding: 10px 20px;
+  }
 }
 @media (width <= 767px){
   .nav-home-tab .tab-item{
