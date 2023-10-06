@@ -263,6 +263,7 @@ body.show-filter{
   .nav-home-tab .tab-item{
     width: 100%;
   }
+ 
 
 }
   
@@ -315,6 +316,7 @@ body.show-filter{
   /*.guide-video{
      width: 50%;
   }*/
+
   .white_box_shadow,.white-box-shadow{
     padding: 50px;
   }
@@ -375,11 +377,17 @@ body.show-filter{
   .grid .g-col-lg-12 {
       grid-column: auto/span 12;
   }
+
+  .news-item{
+    grid-template-columns: 0.6fr 1fr;
+    gap: 60px;
+  }
+ 
 }
 
 @media (width >=1200px){
   .hero-slider .swiper-slide img{
-    height: calc(98vh - 124px);
+    /* height: calc(98vh - 124px); */
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -391,5 +399,6 @@ body.show-filter{
   .career_testimonial_wrapper {
     padding: 30px 90px;
   }
+ 
   
 }
