@@ -2160,64 +2160,6 @@ background: var(--primary);
     width: 100%;
     height: 100%;
 }
-.careerVideo{
-    position: relative;
-    overflow: hidden;
-}
-.careerVideo img{
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
-}
-.careerVideo .overlay
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    opacity: 0.5;
-}
-.playIcon{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    z-index: 2;
-    width: fit-content;
-    height: fit-content;
-    font-size: 80px;
-    color: white;
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
-    background: #000000a8;
-    line-height: 1;
-    transform: scale(1);
-    transition: all 0.35s ease-in-out;
-}
-.playIcon i{
-    width: 70px;
-    height: 79px;
-}
-.playIcon:hover{
-    transform: scale(1.2);
-}
-.d-flex-center{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.short-line{
-    width: 100px;
-    height: 2px;
-    background: var(--gray-50);
-}
 /*------------------ coaching css -------------*/
 .link-broder-box {
     padding: 20px;
@@ -2575,4 +2517,154 @@ a.news-item:hover .title{
 .news-item .description{
     font-size: var(--fs-clamp-20);
     color: var(--muted);
+}
+
+
+.careerVideo{
+    position: relative;
+    overflow: hidden;
+}
+.careerVideo::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.4;
+    transition: all 0.35s ease-in;
+}
+.careerVideo img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+.careerVideo .overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+}
+.playIcon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 2;
+    width: fit-content;
+    height: fit-content;
+    font-size: 80px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background: #000000a8;
+    line-height: 1;
+    transform: scale(1);
+    transition: all 0.35s ease-in-out;
+}
+.playIcon i{
+    width: 70px;
+    height: 79px;
+}
+.playIcon:hover{
+    transform: scale(1.2);
+}
+.d-flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.short-line{
+    width: 100px;
+    height: 2px;
+    background: var(--gray-50);
+}
+.career-grid-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.career-grid-gallery .imgDiv{
+    min-width: 200px;
+    position: relative;
+    overflow: hidden;
+}
+.career-grid-gallery .imgDiv::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.4;
+    transition: all 0.35s ease-in;
+}
+.career-grid-gallery .imgDiv:hover::after{
+    content: '';
+    opacity: 0;
+}
+.employeeItem{
+    padding: 20px;
+}
+.employeeItem .content *{
+    font-size: var(--fs-clamp-14);
+}
+.employeeItem .content .name{
+    color: var(--muted);
+}
+.employeeVideo{
+    position: relative;
+    overflow: hidden;
+    max-width: 200px;
+    height: 130px;
+    margin: auto;
+    margin-bottom: 20px;
+    display: block;
+}
+.employeeVideo .playIcon{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    z-index: 3;
+}
+.employeeVideo .playIcon i {
+    width: 20px;
+    height: 20px;
+}
+
+ .employeeVideo::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.4;
+    transition: all 0.35s ease-in;
+}
+.employeeVideo img,.employeeVideo .playIcon {
+    transform: scale(1);
+    transition: all 0.35s ease-in-out;
+}
+.employeeVideo:hover img,.employeeVideo:hover .playIcon{
+    transform: scale(1.1);
 }
