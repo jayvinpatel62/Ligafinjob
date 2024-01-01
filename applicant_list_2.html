@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,
+            user-scalable=0" name="viewport" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="favicon_io/android-chrome-512x512.png"> 
+        <link rel="icon" type="image/png" sizes="192x192" href="favicon_io/android-chrome-192x192.png"> 
+        <link rel="manifest" href="favicon_io/site.webmanifest">
+
+        <title>APPLICANTS LIST</title>
+
+        <script src="js/jquery.min.js"></script>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/Responsive.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+
+        <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+        <!--------- menu start-->
+        <link rel="stylesheet" type="text/css" href="css/nav-menu.css" />
+        <script src="js/script_nav_menu.js"></script>
+
+        <!--------- Date picker start-->
+        
+        <link rel="stylesheet" type="text/css" href="css/daterangepicker.css" />
+        <script type="text/javascript" src="js/plugins/moment.min.js"></script>
+        <script type="text/javascript" src="js/plugins/daterangepicker.js"></script>
+       
+        <!--------- Date picker end-->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+    </head>
+    <body>
+            <!----------------------------  main-menu start ---------------------------->
+            <nav class="nav-main navbar navbar-expand-lg bg-body-light">
+                <div class="container-fluid px-md-5">
+                <a class="navbar-brand logo" href="#">
+                    <img src="images/logo.png" alt="logo.png" class="img-fluid">
+                </a>
+                
+                <div class="right-content order-lg-last">
+                    <div class="right-login  d-flex gap-3">
+                        <a href="#" class="userloginregister">
+                            <i class="bi bi-person-circle"></i>
+                        </a>
+                        <a href="javascript://" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="bi bi-list"></i>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <div class="collapse pe-2 ms-auto navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 " id="navMenus">
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Candidate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Employer</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown children">
+                        <a class="nav-link toggle-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        More
+                        </a>
+                        <ul class="dropdown-menu sub-menu">
+                            <li class="nav-item"><a class="dropdown-item" href="#">Sub menu item 1</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="#">Sub menu item 2</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="#">Sub menu item 3</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="#">Sub menu item 4</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="#">Sub menu item 5</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                </div>
+                
+                </div>
+            </nav>
+            <!---------------------------- main-menu close ---------------------------->
+
+            <!---------------------------- Header Inner start---------------------------->
+            <header class="header-inner">
+                <div class="p-5 text-center">
+                    <div class="title-64 bold uppr">APPLICANTS LIST</div>
+                    <div class="subtext fs-32">We Support Your Ideas While You Build Great Things</div>
+                </div>
+            </header>
+            <!---------------------------- Header Inner close ---------------------------->
+
+            <!---------------------------- offset_wrapper ---------------------------->
+            <section class="p-4">
+               <div class="container">
+                <ul class="nav nav-tabs applicant_tabs" id="applicant_tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="BasicSearch-tab" data-bs-toggle="tab" data-bs-target="#BasicSearch" type="button" role="tab" aria-controls="BasicSearch" aria-selected="true"><i class="bi bi-search"></i> Basic Search</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="AdvancedSearch-tab" data-bs-toggle="tab" data-bs-target="#AdvancedSearch" type="button" role="tab" aria-controls="AdvancedSearch" aria-selected="false"><i class="bi bi-sliders2"></i> Advanced Search</button>
+                    </li>
+                </ul>
+                <div class="tab-content white_box_shadow border-gray border-radius-10 py-5 px-md-5 px-4">
+                    <!---------------Basic Search tab ----------------->
+                    <div class="tab-pane active" id="BasicSearch" role="tabpanel" aria-labelledby="BasicSearch-tab" tabindex="0">
+                        <div class="accordion accordionCustom" id="accordionPanelsStayOpen">
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button bold" type="button" data-bs-toggle="collapse" data-bs-target="#accOpen_1" aria-expanded="true" aria-controls="accOpen_1">
+                                    Profile Preference
+                                  </button>
+                                </h2>
+                                <div id="accOpen_1" class="accordion-collapse collapse show">
+                                  <div class="accordion-body">
+                                    <div class="grid_checkbox">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Accounts">
+                                            <label class="form-check-label" for="Accounts">
+                                                Accounts
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Advisory">
+                                            <label class="form-check-label" for="Advisory">
+                                                Advisory
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Analyst">
+                                            <label class="form-check-label" for="Analyst">
+                                                Analyst
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Audit Tax Mix">
+                                            <label class="form-check-label" for="Audit Tax Mix">
+                                                Audit Tax Mix
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="BankAudit">
+                                            <label class="form-check-label" for="BankAudit">
+                                                Bank Audit
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Banking">
+                                            <label class="form-check-label" for="Banking">
+                                                Banking
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="CompanyLaw">
+                                            <label class="form-check-label" for="CompanyLaw">
+                                                Company Law
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="CorporateFinance">
+                                            <label class="form-check-label" for="CorporateFinance">
+                                                Corporate Finance
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Credit">
+                                            <label class="form-check-label" for="Credit">
+                                                Credit
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="DirectTax">
+                                            <label class="form-check-label" for="DirectTax">
+                                                Direct Tax
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="DueDiligence">
+                                            <label class="form-check-label" for="DueDiligence">
+                                                Due Diligence
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Education">
+                                            <label class="form-check-label" for="Education">
+                                                Education
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="EquityResearch">
+                                            <label class="form-check-label" for="EquityResearch">
+                                                Equity Research
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="FEMA">
+                                            <label class="form-check-label" for="FEMA">
+                                                FEMA
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Finance">
+                                            <label class="form-check-label" for="Finance">
+                                                Finance
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="FP&A">
+                                            <label class="form-check-label" for="FP&A">
+                                                FP&A
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="GST">
+                                            <label class="form-check-label" for="GST">
+                                                GST
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="HR">
+                                            <label class="form-check-label" for="HR">
+                                                HR
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Insurance">
+                                            <label class="form-check-label" for="Insurance">
+                                                Insurance
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="InternalAudit">
+                                            <label class="form-check-label" for="InternalAudit">
+                                                Internal Audit
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="InternationalTax">
+                                            <label class="form-check-label" for="InternationalTax">
+                                                International Tax
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="InvtBanking">
+                                            <label class="form-check-label" for="InvtBanking">
+                                                Invt Banking
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Litigation">
+                                            <label class="form-check-label" for="Litigation">
+                                                Litigation
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="MarketingSalesorBD">
+                                            <label class="form-check-label" for="MarketingSalesorBD">
+                                                Marketing Sales or BD
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="MIS">
+                                            <label class="form-check-label" for="MIS">
+                                                MIS
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="SEBI">
+                                            <label class="form-check-label" for="SEBI">
+                                                SEBI
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="SpecialAudits">
+                                            <label class="form-check-label" for="SpecialAudits">
+                                                Special Audits
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="StatAudit">
+                                            <label class="form-check-label" for="StatAudit">
+                                                Stat Audit
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Treasury">
+                                            <label class="form-check-label" for="Treasury">
+                                                Treasury
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Valuation">
+                                            <label class="form-check-label" for="Valuation">
+                                                Valuation
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Others">
+                                            <label class="form-check-label" for="Others">
+                                                Others
+                                            </label>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button bold" type="button" data-bs-toggle="collapse" data-bs-target="#accOpen_2" aria-expanded="true" aria-controls="accOpen_2">
+                                    Skills
+                                  </button>
+                                </h2>
+                                <div id="accOpen_2" class="accordion-collapse collapse show">
+                                  <div class="accordion-body">
+                                    <div class="grid_checkbox">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Accounts">
+                                            <label class="form-check-label" for="Accounts">
+                                                Accounts
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Advisory">
+                                            <label class="form-check-label" for="Advisory">
+                                                Advisory
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Analyst">
+                                            <label class="form-check-label" for="Analyst">
+                                                Analyst
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Audit Tax Mix">
+                                            <label class="form-check-label" for="Audit Tax Mix">
+                                                Audit Tax Mix
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="BankAudit">
+                                            <label class="form-check-label" for="BankAudit">
+                                                Bank Audit
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Banking">
+                                            <label class="form-check-label" for="Banking">
+                                                Banking
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="CompanyLaw">
+                                            <label class="form-check-label" for="CompanyLaw">
+                                                Company Law
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="CorporateFinance">
+                                            <label class="form-check-label" for="CorporateFinance">
+                                                Corporate Finance
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Credit">
+                                            <label class="form-check-label" for="Credit">
+                                                Credit
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="DirectTax">
+                                            <label class="form-check-label" for="DirectTax">
+                                                Direct Tax
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="DueDiligence">
+                                            <label class="form-check-label" for="DueDiligence">
+                                                Due Diligence
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Education">
+                                            <label class="form-check-label" for="Education">
+                                                Education
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="EquityResearch">
+                                            <label class="form-check-label" for="EquityResearch">
+                                                Equity Research
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="FEMA">
+                                            <label class="form-check-label" for="FEMA">
+                                                FEMA
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Finance">
+                                            <label class="form-check-label" for="Finance">
+                                                Finance
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="FP&A">
+                                            <label class="form-check-label" for="FP&A">
+                                                FP&A
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="GST">
+                                            <label class="form-check-label" for="GST">
+                                                GST
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="HR">
+                                            <label class="form-check-label" for="HR">
+                                                HR
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Insurance">
+                                            <label class="form-check-label" for="Insurance">
+                                                Insurance
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="InternalAudit">
+                                            <label class="form-check-label" for="InternalAudit">
+                                                Internal Audit
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="InternationalTax">
+                                            <label class="form-check-label" for="InternationalTax">
+                                                International Tax
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="InvtBanking">
+                                            <label class="form-check-label" for="InvtBanking">
+                                                Invt Banking
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Litigation">
+                                            <label class="form-check-label" for="Litigation">
+                                                Litigation
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="MarketingSalesorBD">
+                                            <label class="form-check-label" for="MarketingSalesorBD">
+                                                Marketing Sales or BD
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="MIS">
+                                            <label class="form-check-label" for="MIS">
+                                                MIS
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="SEBI">
+                                            <label class="form-check-label" for="SEBI">
+                                                SEBI
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="SpecialAudits">
+                                            <label class="form-check-label" for="SpecialAudits">
+                                                Special Audits
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="StatAudit">
+                                            <label class="form-check-label" for="StatAudit">
+                                                Stat Audit
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Treasury">
+                                            <label class="form-check-label" for="Treasury">
+                                                Treasury
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Valuation">
+                                            <label class="form-check-label" for="Valuation">
+                                                Valuation
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Others">
+                                            <label class="form-check-label" for="Others">
+                                                Others
+                                            </label>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row row-cols-md-2 row-cols-lg-3 row-cols-1">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="JobseekerStatus" class="form-label">Jobseeker Status</label>
+                                    <select class="form-select" aria-label="JobseekerStatus">
+                                        <option selected>Select Status of Jobseeker</option>
+                                        <option value="1">Option One</option>
+                                        <option value="2">Option Two</option>
+                                        <option value="3">Option Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="NatureofCompany" class="form-label">Nature of Company </label>
+                                    <select class="form-select" aria-label="NatureofCompany">
+                                        <option selected>Select Nature of Company </option>
+                                        <option value="1">Option One</option>
+                                        <option value="2">Option Two</option>
+                                        <option value="3">Option Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="YearsofExperience " class="form-label">Years of Experience</label>
+                                    <input type="number" class="form-control" id="YearsofExperience " placeholder="Years of Experience ">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="StageofQualification" class="form-label">Stage of Qualification</label>
+                                    <select class="form-select" aria-label="StageofQualification">
+                                        <option selected>Select Stage of Qualification</option>
+                                        <option value="1">Option One</option>
+                                        <option value="2">Option Two</option>
+                                        <option value="3">Option Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="HighestDegreeCompleted" class="form-label">Highest Degree Completed </label>
+                                    <select class="form-select" aria-label="HighestDegreeCompleted ">
+                                        <option selected>Highest Degree Completed </option>
+                                        <option value="1">Option One</option>
+                                        <option value="2">Option Two</option>
+                                        <option value="3">Option Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="SearchbyCity" class="form-label">Search by City</label>
+                                    <select class="form-select" aria-label="SearchbyCity">
+                                        <option selected>Select City</option>
+                                        <option value="1">Option One</option>
+                                        <option value="2">Option Two</option>
+                                        <option value="3">Option Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="GraduationYear" class="form-label">Graduation Year</label>
+                                    <select class="form-select" aria-label="GraduationYear">
+                                        <option selected>Select Graduation Year</option>
+                                        <option value="1">Option One</option>
+                                        <option value="2">Option Two</option>
+                                        <option value="3">Option Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="PostGraduationYear" class="form-label">Post Graduation Year</label>
+                                    <select class="form-select" aria-label="PostGraduationYear">
+                                        <option selected>Select Post Graduation Year</option>
+                                        <option value="1">Option One</option>
+                                        <option value="2">Option Two</option>
+                                        <option value="3">Option Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="UploadedCV" class="form-label">Uploaded CV</label>
+                                    <select class="form-select" aria-label="UploadedCV">
+                                        <option selected>Select from Options</option>
+                                        <option value="1">Option One</option>
+                                        <option value="2">Option Two</option>
+                                        <option value="3">Option Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <br>
+                        <div class="col col-md-12 col-lg-12">
+                            <a href="javascript://" class="btn btn-primary">Search</a>
+                            <a href="javascript://" class="btn btn-dark">Reset</a>
+                        </div>
+                    </div>
+                    <!---------------Basic Search tab close ----------------->
+                    <!---------------Advance Search tab ----------------->
+                    <div class="tab-pane" id="AdvancedSearch" role="tabpanel" aria-labelledby="AdvancedSearch-tab" tabindex="0">
+                        <div class="accordion accordionCustom" id="accordionPanelsStayOpen">
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button bold" type="button" data-bs-toggle="collapse" data-bs-target="#KeyIndustries" aria-expanded="true" aria-controls="KeyIndustries">
+                                    Key Industries 
+                                  </button>
+                                </h2>
+                                <div id="KeyIndustries" class="accordion-collapse collapse show">
+                                  <div class="accordion-body">
+                                    <div class="grid_checkbox">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="AccountingAuditing">
+                                            <label class="form-check-label" for="AccountingAuditing">
+                                                Accounting/ Auditing
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="AdvertisingMarketing">
+                                            <label class="form-check-label" for="AdvertisingMarketing">
+                                                Advertising & Marketing
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="AssetManagement">
+                                            <label class="form-check-label" for="AssetManagement">
+                                                Asset Management
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Automobile">
+                                            <label class="form-check-label" for="Automobile">
+                                                Automobile
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Banking">
+                                            <label class="form-check-label" for="Banking">
+                                                Banking
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="CAFirms">
+                                            <label class="form-check-label" for="CAFirms">
+                                                CA Firms
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="ComplianceRiskManagement">
+                                            <label class="form-check-label" for="ComplianceRiskManagement">
+                                                Compliance & Risk Management
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="CorporateFinance">
+                                            <label class="form-check-label" for="CorporateFinance">
+                                                Corporate Finance
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="CreditAnalysisUnderwriting">
+                                            <label class="form-check-label" for="CreditAnalysisUnderwriting">
+                                                Credit Analysis & Underwriting
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="CSFirms">
+                                            <label class="form-check-label" for="CSFirms">
+                                                CS Firms
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="E-commerceOnlineRetail">
+                                            <label class="form-check-label" for="E-commerceOnlineRetail">
+                                                E-commerce & Online Retail
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="EducationTraining">
+                                            <label class="form-check-label" for="EducationTraining">
+                                                Education/ Training
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="EnvironmentSustainability">
+                                            <label class="form-check-label" for="EnvironmentSustainability">
+                                                Environment & Sustainability
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="FilmEntertainment">
+                                            <label class="form-check-label" for="FilmEntertainment">
+                                                Film/ Entertainment
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="FinancialConsultingAdvisory">
+                                            <label class="form-check-label" for="FinancialConsultingAdvisory">
+                                                Financial Consulting & Advisory
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="FinancialResearch">
+                                            <label class="form-check-label" for="FinancialResearch ">
+                                                Financial Research
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Fintech">
+                                            <label class="form-check-label" for="Fintech">
+                                                Fintech
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Gaming">
+                                            <label class="form-check-label" for="Gaming">
+                                                Gaming
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="GovernmentPublicSector">
+                                            <label class="form-check-label" for="GovernmentPublicSector">
+                                                Government & Public Sector
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="GovernmentContract">
+                                            <label class="form-check-label" for="GovernmentContract">
+                                                Government Contract
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="HealthcarePharmaceuticals">
+                                            <label class="form-check-label" for="HealthcarePharmaceuticals">
+                                                Healthcare & Pharmaceuticals 
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Insurance">
+                                            <label class="form-check-label" for="Insurance">
+                                                Insurance
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="IvstBanking">
+                                            <label class="form-check-label" for="IvstBanking">
+                                                Ivst Banking
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="ITServicesconsulting">
+                                            <label class="form-check-label" for="ITServicesconsulting">
+                                                IT Services & consulting
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="JudiciaryCourtSystem">
+                                            <label class="form-check-label" for="JudiciaryCourtSystem">
+                                                Judiciary & Court System 
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="LawFirms">
+                                            <label class="form-check-label" for="LawFirms">
+                                                Law Firms
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="ManufacturingIndCompanies">
+                                            <label class="form-check-label" for="ManufacturingIndCompanies">
+                                                Manufacturing & Ind Companies
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="PortsShipping">
+                                            <label class="form-check-label" for="PortsShipping">
+                                                Ports & Shipping
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="RealEstate">
+                                            <label class="form-check-label" for="RealEstate">
+                                                Real Estate
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Startup">
+                                            <label class="form-check-label" for="Startup">
+                                                Startup
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="iOthers">
+                                            <label class="form-check-label" for="iOthers">
+                                                Others
+                                            </label>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button bold" type="button" data-bs-toggle="collapse" data-bs-target="#SubSkills" aria-expanded="true" aria-controls="SubSkills">
+                                    Sub-Skills
+                                  </button>
+                                </h2>
+                                <div id="SubSkills" class="accordion-collapse collapse show">
+                                  <div class="accordion-body">
+                                    <div class="grid_checkbox">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Excel">
+                                            <label class="form-check-label" for="Excel">
+                                                Excel
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="EnglishProficiency">
+                                            <label class="form-check-label" for="EnglishProficiency">
+                                                English Proficiency
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="GraphicDesigning">
+                                            <label class="form-check-label" for="GraphicDesigning">
+                                                Graphic Designing
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Powerpoint">
+                                            <label class="form-check-label" for="Powerpoint">
+                                                Powerpoint
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Programming">
+                                            <label class="form-check-label" for="Programming">
+                                                Programming
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="SAP">
+                                            <label class="form-check-label" for="SAP">
+                                                SAP
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="SocialMedia">
+                                            <label class="form-check-label" for="SocialMedia">
+                                                Social Media
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Tally">
+                                            <label class="form-check-label" for="Tally">
+                                                Tally
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="TeamManaging">
+                                            <label class="form-check-label" for="TeamManaging">
+                                                Team Managing 
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Word">
+                                            <label class="form-check-label" for="Word">
+                                                Word
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="BusinessDevelopment">
+                                            <label class="form-check-label" for="BusinessDevelopment">
+                                                Business Development
+                                            </label>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row row-cols-md-2 row-cols-lg-3 row-cols-1">
+                            
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="CurrentSalaryRang" class="form-label">Current Salary Range </label>
+                                    <input type="number" class="form-control" id="CurrentSalaryRang" placeholder="Current Salary Range (in Lacs)">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="ExpectedSalary" class="form-label">Expected Salary Range</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Expected Salary Range (in Lacs)" aria-label="ExpectedSalary" aria-describedby="basic-addon2">
+                                        <span class="input-group-text" id="basic-addon2">lacs</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="MaximumattemptsforCACS" class="form-label">Maximum attempts for CA/CS</label>
+                                    <select class="form-select" aria-label="MaximumattemptsforCACS">
+                                        <option selected>Select Maximum number of Attempts</option>
+                                        <option value="1">Option One</option>
+                                        <option value="2">Option Two</option>
+                                        <option value="3">Option Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="CollegeName" class="form-label">College Name </label>
+                                    <input type="text" class="form-control" id="CollegeName" placeholder="Search by College Name ">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="LeaveforExams" class="form-label">Leave for Exams</label>
+                                    <input type="text" class="form-control" id="LeaveforExams" placeholder="Leave for Exams ">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="NoticePeriod" class="form-label">Notice Period</label>
+                                    <select class="form-select" aria-label="NoticePeriod">
+                                        <option selected>Select Notice Period</option>
+                                        <option value="1">Option One</option>
+                                        <option value="2">Option Two</option>
+                                        <option value="3">Option Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="Gender" class="form-label">Gender</label>
+                                    <select class="form-select" aria-label="Gender">
+                                        <option selected>Select Gender</option>
+                                        <option value="1">Option One</option>
+                                        <option value="2">Option Two</option>
+                                        <option value="3">Option Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="SearchbyPincode" class="form-label">Search by Pincode</label>
+                                    <input type="text" class="form-control" id="SearchbyPincode" placeholder="Auto Select Pincode">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="Activein" class="form-label">Active in </label>
+                                    <input type="text" class="form-control" id="Activein" placeholder="Days Active in">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="RegisteredBetween" class="form-label">Registered Between</label>
+                                    <input type="text" class="form-control RegisteredBetween" id="RegisteredBetween" placeholder="Dates Registered Between ">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="Name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="Name" placeholder="Auto Select Pincode">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="SearchbyPincode" class="form-label">Search by Pincode</label>
+                                    <input type="text" class="form-control" id="SearchbyPincode" placeholder="Search by Candidate Name">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="Email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="Email" placeholder="Search by Email">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="MobileNumber" class="form-label">Mobile Number</label>
+                                    <input type="text" class="form-control" id="MobileNumber" placeholder="Mobile Number">
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col col-md-12 col-lg-12">
+                            <a href="javascript://" class="btn btn-primary">Search</a>
+                            <a href="javascript://" class="btn btn-dark">Reset</a>
+                        </div>
+                    </div>
+                    <!---------------Advance Search tab close----------------->
+                </div>
+                <br>
+                
+               </div>
+            </section>
+            <!---------------------------- offset_wrapper close ---------------------------->
+            <!--------------- jobseeker status selection ----------------->
+            <hr>
+            <div class="px-3">
+                <div class="row align-items-center justify-content-center justify-content-md-between g-3">
+                    <div class="col-12 col-md  text-center text-md-start">
+                        <a id="ctl00_ContentPlaceHolder1_ucListView_lnkExportExcel" title="Export to Excel" class="btn btn-block btn-success" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$ucListView$lnkExportExcel&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Excel</a>
+                    </div>
+                    <div class="col-12 col-md">
+                        <div class="d-flex flex-wrap gap-3 align-items-center justify-content-center justify-content-md-end">
+                            <span id="ctl00_ContentPlaceHolder1_ucListView_lblstatus">Jobseeker Status:</span>
+                            <select style="width: 200px;" name="ctl00$ContentPlaceHolder1$ucListView$ddlstatus" id="ctl00_ContentPlaceHolder1_ucListView_ddlstatus" class="form-select">
+                                <option selected="selected" value="None">-Select-</option>
+                                <option value="0">Pending</option>
+                                <option value="-1">Rejected</option>
+                                <option value="1">Shortlisted</option>
+                                <option value="3">Opening Closed</option>
+                                <option value="2">Under Review</option>
+                            </select>
+                            <a onclick="return ChangeStatusSelectedVal();" id="ctl00_ContentPlaceHolder1_ucListView_lnkStatus" title="change status" class="btn btn-block btn-success" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$ucListView$lnkStatus&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Change</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!--------------- jobseeker status selection close ----------------->
+            <br>
+            <!--------------- show result & pagination ----------------->
+            <div class="px-3">
+                <div class="row align-items-center  g-3">
+                    <div class="col-12 col-md">
+                        <div id="ctl00_ContentPlaceHolder1_ucListView_lblTotalRows1" class="dataTables_info text-center text-md-start">Showing 201 to 300 of 19893 entries</div>
+                    </div>
+                    <div class="col-12 col-md">
+                        <div class="dataTables_info text-center">
+                            <label>
+                                <select name="ctl00$ContentPlaceHolder1$ucListView$ddlPageSize1" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$ucListView$ddlPageSize1\',\'\')', 0)" id="ctl00_ContentPlaceHolder1_ucListView_ddlPageSize1" size="1" aria-controls="example1" class="form-select form-select-sm">
+                                    <option value="10">10</option>
+                                    <option value="20">20</option>
+                                    <option value="30">30</option>
+                                    <option value="40">40</option>
+                                    <option value="50">50</option>
+                                    <option selected="selected" value="100">100</option>
+                                    <option value="200">200</option>
+                                    <option value="300">300</option>
+                                    <option value="500">500</option>
+                                    <option value="1000">1000</option>
+                                </select>
+                            </label>
+                            <b class="ms-2">records per page</b>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center justify-content-md-end">
+                               
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="First">
+                                        <i class="bi bi-chevron-double-left"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item active" aria-current="page">
+                                    <a class="page-link" href="#">1</a>
+                                  </li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Last">
+                                        <i class="bi bi-chevron-double-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!--------------- show result & pagination close----------------->
+            <br>
+            <!--------------- data table ----------------->
+            <div class="table-responsive">
+                <table class="table table-bordered table-applicantlist">
+                    <thead>
+                        <tr id="ctl00_ContentPlaceHolder1_ucListView_trHeader">
+                            <th><input type="checkbox" id="chkallStatus" onclick="checkallStatus(this);"></th>
+                            <th><a id="ctl00_ContentPlaceHolder1_ucListView_lnkSRNO" title="Sort" alt="SRNO" sd="ASC" runat="server" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$ucListView$lnkSRNO&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">No.</a></th>
+                            <th id="ctl00_ContentPlaceHolder1_ucListView_JobCode" class="header" width="100px">Job Code</th>
+                            <th id="ctl00_ContentPlaceHolder1_ucListView_Name" class="header" width="270px">Name</th>
+                            <th id="ctl00_ContentPlaceHolder1_ucListView_Mobile" class="header" width="10px">Mobile No</th>
+                            <th><a id="ctl00_ContentPlaceHolder1_ucListView_lnkCity" title="Sort" alt="City" sd="ASC" runat="server" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$ucListView$lnkCity&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">City</a></th>
+                            <th id="ctl00_ContentPlaceHolder1_ucListView_AppliedOn" class="header" width="120px">Applied On</th>
+                            <th id="ctl00_ContentPlaceHolder1_ucListView_Experience" class="header" width="10px">Experience</th>
+                            <th><a id="ctl00_ContentPlaceHolder1_ucListView_lnkCurrentSalary" title="Sort" alt="CurrentSalary" sd="ASC" runat="server" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$ucListView$lnkCurrentSalary&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Current CTC</a></th>
+                            <th id="ctl00_ContentPlaceHolder1_ucListView_Comments" class="header" width="50px">Comments</th>
+                            <th id="ctl00_ContentPlaceHolder1_ucListView_ApplicationStatus" class="header" width="150px">Status</th>
+                            <th id="ctl00_ContentPlaceHolder1_ucListView_Options">Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="checkbox" onclick="setSessionValueStatus('MjkyMjM=-d7lMCt7X+RA=',this);" id="chk1" value="MjkyMjM=-d7lMCt7X+RA=">
+                            </td>
+                            <td >1</td>
+                            <td>
+                                SACA-1559
+                            </td>
+                            <td>
+                                <div id="ctl00_ContentPlaceHolder1_ucListView_pnl1" class="green" runat="server" style="display: inline-block;">
+                                </div>
+                                Ashfak Khan
+                            </td>
+                            <td>
+                                9619665192
+                            </td>
+                            <td>Mumbai - Western 2 (Borivali to Bandra)</td>
+                            <td title="19-Nov-2021 19:53">19-Nov-2021</td>
+                            <td>15 years &amp; above</td>
+                            <td>32.9</td>
+                            <td>
+                                <textarea name="ctl00$ContentPlaceHolder1$ucListView$txt29223" rows="3" cols="20" id="txt29223" runat="server" onblur="SaveData('txt29223','29223');"></textarea>
+                            </td>
+                            <td>
+                                <select name="ctl00$ContentPlaceHolder1$ucListView$ddl29223" id="ctl00_ContentPlaceHolder1_ucListView_ddl29223" class="form-select" >
+                                    <option selected="selected" value="0">Pending</option>
+                                    <option value="-1">Rejected</option>
+                                    <option value="1">Shortlisted</option>
+                                    <option value="2">Under Review</option>
+                                    <option value="3">Opening closed</option>
+                                </select>
+                            <span style="display:none;"></span><input name="ctl00$ContentPlaceHolder1$ucListView$hdnID29223" type="hidden" id="ctl00_ContentPlaceHolder1_ucListView_hdnID29223" value="MjkyMjM=-d7lMCt7X+RA="></td>
+                            <td>
+                                <div class="table-action-tools">
+                                    <a href="javascript://" class="btn btn-fab fab-sm btn-light viewProfile-modal"  title="View Jobseeker"><i class="bi bi-eye-fill"></i></a>
+                                    <a href="javascript://" class="btn btn-fab fab-sm btn-light"  title="View CV" ><i class="bi bi-newspaper"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--------------- data table close----------------->
+
+            <!----------- adspace ---------->
+                <!-- please remove class "d-none" & after show ads -->
+                <div class="adspace d-none">Ad Here</div> 
+            <!--------- adspace close ---------->
+
+           <div class="spacer"></div>
+         
+            <footer class="footer-sec">
+                <div class="container">
+                    <div class="row g-3 row-cols-1 row-cols-md-2 row-cols-lg-4">
+                        <div class="col">
+                            <div class="footer_item">
+                                <div class="ft-title">
+                                    JOBS FOR CA
+                                </div>
+                                <div class="ft-links">
+                                <a href="#" class="link">Audit Jobs</a>
+                                <a href="#" class="link">Banking Jobs</a>
+                                <a href="#" class="link">Corporate Finance Jobs </a>
+                                <a href="#" class="link">Direct Tax Jobs</a>
+                                <a href="#" class="link">Due Diligence Jobs</a>
+                                <a href="#" class="link">GST Jobs</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="footer_item">
+                                <div class="ft-title">
+                                    JOBS FOR CS
+                                </div>
+                                <div class="ft-links">
+                                <a href="#" class="link">Advisory Jobs</a>
+                                <a href="#" class="link">Company Law Jobs </a>
+                                <a href="#" class="link">Due Diligence Jobs</a>
+                                <a href="#" class="link">FEMA Jobs</a>
+                                <a href="#" class="link">Litigation Jobs</a>
+                                <a href="#" class="link">Secretarial Jobs</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="footer_item">
+                                <div class="ft-title">
+                                    JOBS FOR LLB
+                                </div>
+                                <div class="ft-links">
+                                <a href="#" class="link">Analyst Jobs</a>
+                                <a href="#" class="link">Due Diligence Jobs </a>
+                                <a href="#" class="link">GST Jobs </a>
+                                <a href="#" class="link">Litigation Jobs</a>
+                                <a href="#" class="link">SEBI Jobs</a>
+                                <a href="#" class="link">Valuation Jobs</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="footer_item">
+                                <div class="ft-title">
+                                    JOBS FOR MBA
+                                </div>
+                                <div class="ft-links">
+                                <a href="#" class="link">Admin Jobs</a>
+                                <a href="#" class="link">Advisory Jobs</a>
+                                <a href="#" class="link">Analyst Jobs</a>
+                                <a href="#" class="link">Education Jobs </a>
+                                <a href="#" class="link">HR Jobs </a>
+                                <a href="#" class="link">Finance Jobs</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="footer-btm-links">
+                        <a href="#" class="link">About Us</a>
+                        <a href="#" class="link">Candidate</a>
+                        <a href="#" class="link">Employer</a>
+                        <a href="#" class="link">Blogs</a>
+                        <a href="#" class="link">Disclaimer</a>
+                        <a href="#" class="link"> Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!---------------------------- view profile modal start ---------------------------->
+            <div class="modal fade viewProfile-modal" id="viewProfile-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">View Profile</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <iframe src="view_profile.html" class="iframeViewProfile" frameborder="0"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!---------------------------- view profile modal close ---------------------------->
+            <div class="myModal" id="viewmyProfile-modal">
+                <div class="myModal-dialog myModal-dialog-centered myModal-fullscreen">
+                    <div class="myModal-content">
+                      <div class="myModal-header">
+                        <h1 class="myModal-title fs-5" id="staticBackdropLabel">View Profile</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="myModal-body">
+                        <iframe src="view_profile.html" class="iframeViewProfile" frameborder="0"></iframe>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <!---------------------------- Preloader start ---------------------------->
+            <script src="js/plugins/preloader.js"></script>
+
+            <div id="preloader">
+                <lottie-player id="status"
+                    src="https://assets9.lottiefiles.com/packages/lf20_f1dhzsnx.json"
+                    background="transparent" speed="3" style="width: 200px; height:
+                    200px;" loop autoplay></lottie-player>
+            </div>
+            <!---------------------------- Preloader close ---------------------------->
+
+
+            <!-- script start -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+            
+
+            <!-- swiper js library -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+            <script type="module">
+                import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+                </script>
+            <script src="js/script_swiper.js"></script>
+            <!-- swiper js library end -->
+
+            
+            
+            <!--Common script -->
+            <script src="js/script.js"></script>
+            <script src="https://cdn.jsdelivr.net/gh/thelevicole/youtube-to-html5-loader@4.0.0/dist/YouTubeToHtml5.js"></script>
+            <script>new YouTubeToHtml5();</script>
+            <script type="text/javascript">
+                $(function() {
+                  $('.RegisteredBetween').daterangepicker({
+                    
+                    autoUpdateInput: false,
+                    locale: {
+                        cancelLabel: 'Clear',
+                        format: 'DD/MM/YYYY'
+                    }
+                  });
+                
+                  $('.RegisteredBetween').on('apply.daterangepicker', function(ev, picker) {
+                      $(this).val(picker.startDate.format('DD/MM/YYYY') + ' - ' + picker.endDate.format('DD/MM/YYYY'));
+                  });
+                
+                  $('.RegisteredBetween').on('cancel.daterangepicker', function(ev, picker) {
+                      $(this).val('');
+                  });
+                
+                });
+                </script>
+    </body>
+</html>
