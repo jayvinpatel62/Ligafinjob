@@ -759,6 +759,22 @@ a,a:hover{
 .footer-sec{
     padding: 50px 0;
 }
+.footer-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.social-links{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 7px;
+}
+.social-links .icon{
+    padding: 10px 10px;
+    color:white;
+}
 .footer_item{
     text-align: center;
     margin-bottom: 20px;
@@ -884,8 +900,9 @@ a,a:hover{
     width: 100%;
 }
 .dashboard_bg{
-    background: url('../images/dashboard_bg.png') no-repeat;
+    background: url('../images/dashboard_bg_full.jpeg') no-repeat;
     background-size: cover;
+    background-position: center;
     border-radius: 30px;
     position: relative;
     overflow: hidden;
@@ -2668,6 +2685,7 @@ a.news-item:hover .title{
 .employeeVideo:hover img,.employeeVideo:hover .playIcon{
     transform: scale(1.1);
 }
+
 .myModal.show{
     display: block;
 }
