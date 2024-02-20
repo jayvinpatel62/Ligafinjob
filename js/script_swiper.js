@@ -43,6 +43,34 @@ var blogsSwiper = new Swiper('.blogs_swiper', {
   navigation: false
 });
 
+
+var employeesTestimonial = new Swiper('.employeesTestimonial_swiper', {
+  direction: 'horizontal',
+  slidesPerView: 1,
+  spaceBetween: 30,
+  centeredSlides: false,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+   
+    640: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 2,
+    },
+    1360: {
+      slidesPerView: 4,
+    }
+  },
+  navigation: false
+});
 var testimonialSwiper = new Swiper('.testimonial_swiper', {
   direction: 'horizontal',
   slidesPerView: 1,

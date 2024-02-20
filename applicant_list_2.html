@@ -33,6 +33,7 @@
         <!--------- Date picker start-->
         
         <link rel="stylesheet" type="text/css" href="css/daterangepicker.css" />
+        <!-- <link rel="stylesheet" type="text/css" href="css/daterangepicker-bs3.css" /> -->
         <script type="text/javascript" src="js/plugins/moment.min.js"></script>
         <script type="text/javascript" src="js/plugins/daterangepicker.js"></script>
        
@@ -1284,7 +1285,7 @@
                 </div>
               </div>
             <!---------------------------- view profile modal close ---------------------------->
-            <div class="myModal" id="viewmyProfile-modal">
+            <div class="myModal" id="viewProfile-modal">
                 <div class="myModal-dialog myModal-dialog-centered myModal-fullscreen">
                     <div class="myModal-content">
                       <div class="myModal-header">
@@ -1330,22 +1331,24 @@
             <script>new YouTubeToHtml5();</script>
             <script type="text/javascript">
                 $(function() {
-                  $('.RegisteredBetween').daterangepicker({
-                    
-                    autoUpdateInput: false,
-                    locale: {
-                        cancelLabel: 'Clear',
-                        format: 'DD/MM/YYYY'
-                    }
-                  });
-                
-                  $('.RegisteredBetween').on('apply.daterangepicker', function(ev, picker) {
-                      $(this).val(picker.startDate.format('DD/MM/YYYY') + ' - ' + picker.endDate.format('DD/MM/YYYY'));
-                  });
-                
-                  $('.RegisteredBetween').on('cancel.daterangepicker', function(ev, picker) {
-                      $(this).val('');
-                  });
+
+                  $('.RegisteredBetween').daterangepicker(
+                        {
+                            ranges: {
+                                'Today': [moment(), moment()],
+                                'Yesterday': [moment().subtract('days', 1), moment().subtract('days', 1)],
+                                'Last 7 Days': [moment().subtract('days', 6), moment()],
+                                'Last 30 Days': [moment().subtract('days', 29), moment()],
+                                'This Month': [moment().startOf('month'), moment().endOf('month')],
+                                'Last Month': [moment().subtract('month', 1).startOf('month'), moment().subtract('month', 1).endOf('month')]
+                            },
+                            startDate: moment().subtract('days', 29),
+                            endDate: moment()
+                        },
+                        function (start, end) {
+                            $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+                        }
+                        );
                 
                 });
                 </script>

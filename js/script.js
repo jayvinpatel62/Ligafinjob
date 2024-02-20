@@ -135,8 +135,9 @@ $(".filter-close").click(function () {
     $(".aside-filter-wrapper").toggle();
     $(".overlay-filter").toggle();
 });
-$(".viewProfile-modal").click(function () {
-    $("#viewmyProfile-modal").addClass('show');
+
+$(".viewProfile-modal").on('click', function () {
+    $("#viewProfile-modal").addClass('show');
 });
 $(".myModal .btn-close").click(function () {
     $(".myModal.show").removeClass('show');

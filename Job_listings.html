@@ -91,22 +91,32 @@
             <!---------------------------- main-menu close ---------------------------->
 
             <!---------------------------- Header Inner start---------------------------->
-            <header class="header-inner">
+            <header class="header-inner bg-joblisting">
                 <div class="p-5 text-center">
                     <div class="title-64 bold uppr">Job Listings</div>
                     <div class="subtext fs-32">We Support Your Ideas While You Build Great Things</div>
                 </div>
             </header>
             <!---------------------------- Header Inner close ---------------------------->
-
+            <div class="filter-header-mobile d-flex d-md-none">
+                <h4><i class="bi bi-sliders2 me-2"></i>Filter</h4>
+                <i class="bi bi-arrow-right"></i>
+            </div>
+            <div class="overlay-filter"></div>
             <!---------------------------- offset_wrapper ---------------------------->
-            <section class="p-4">
-               <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="aside-filter-wrapper">
-                            <h4> <i class="bi bi-sliders2 me-2"></i>Filter</h4>
-                            <hr>
+            <section class="p-md-4 p-2">
+                
+               <div class="container-xl">
+                <div class="joblist-wrapper">
+                    <div class="aside-filter-wrapper">
+                        <div class="filter-title">
+                            <h4><i class="bi bi-sliders2 me-2"></i>Filter</h4>
+                            <a href="javascript://" class="filter-close d-flex d-md-none">
+                                <i class="bi bi-x icon"></i>
+                            </a>
+                        </div>
+                        <hr>
+                        <div class="inner-filter-scroller">
                             <div class="input-addon">
                                 <input type="text" class="form-control searchBox" name="search" placeholder="Search by Job Code">
                                 <i class="bi bi-search icon"></i>
@@ -172,7 +182,7 @@
                                 <div class="accordion-item mb-3">
                                     <h2 class="accordion-header">
                                         <button class="accordion-button bold" type="button" data-bs-toggle="collapse" data-bs-target="#accFilter-2" aria-expanded="true" aria-controls="accFilter-2">
-                                         Sub-Category
+                                            Sub-Category
                                         </button>
                                     </h2>
                                     <div id="accFilter-2" class="accordion-collapse collapse show">
@@ -247,7 +257,7 @@
                                 <div class="accordion-item mb-3">
                                     <h2 class="accordion-header">
                                         <button class="accordion-button bold" type="button" data-bs-toggle="collapse" data-bs-target="#accFilter-3" aria-expanded="true" aria-controls="accFilter-3">
-                                         Profile Preference
+                                            Profile Preference
                                         </button>
                                     </h2>
                                     <div id="accFilter-3" class="accordion-collapse collapse show">
@@ -448,7 +458,7 @@
                                 <div class="accordion-item mb-3">
                                     <h2 class="accordion-header">
                                         <button class="accordion-button bold" type="button" data-bs-toggle="collapse" data-bs-target="#accFilter-4" aria-expanded="true" aria-controls="accFilter-4">
-                                         Location
+                                            Location
                                         </button>
                                     </h2>
                                     <div id="accFilter-4" class="accordion-collapse collapse show">
@@ -602,7 +612,7 @@
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="checkbox" value="" id="No">
                                                         <label class="form-check-label" for="No">
-                                                          No
+                                                            No
                                                         </label>
                                                     </div>
                                                 </div>
@@ -613,7 +623,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-9">
+                    <div class="right-job-list-items">
                         <div class="job-list-item">
                             <div class="job-list-item-row">
                                 <div class="leftside">
