@@ -2801,3 +2801,13 @@ a.news-item:hover .title{
 .employeesTestimonial_swiper .testimonial_item .content{
     box-shadow: 0 2px 12px #00000020;
 }
+.descrLogo-div{
+    width: 170px;
+    margin-bottom: 20px;
+}
+.descrLogo-div img{
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
